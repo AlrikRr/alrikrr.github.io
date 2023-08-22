@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>AlrikRr&#x27;s Blog</title>
-    <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/feed.xml" rel="self" />
-    <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview" />
+    <link href="https://alrikrr.github.io/feed.xml" rel="self" />
+    <link href="https://alrikrr.github.io" />
     <updated>2023-08-15T21:53:28-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
-    <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview</id>
+    <id>https://alrikrr.github.io</id>
 
     <entry>
         <title>My PNPT FeedBack</title>
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/my-pnpt-feedback/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/my-pnpt-feedback/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/my-cert.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/my-pnpt-feedback/"/>
+        <id>https://alrikrr.github.io/my-pnpt-feedback/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/2/my-cert.jpg" medium="image" />
             <category term="Updates"/>
 
         <updated>2023-08-15T19:11:58-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/my-cert.jpg" alt="My PNPT Feedback" />
+                        <img src="https://alrikrr.github.io/media/posts/2/my-cert.jpg" alt="My PNPT Feedback" />
                     Hi! Today I’m going to share with you my feedback on the PNPT certification that I passed at the beginning&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/my-cert.jpg" class="type:primaryImage" alt="My PNPT Feedback" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/2/my-cert.jpg" class="type:primaryImage" alt="My PNPT Feedback" /></p>
                 <p>Hi! Today I’m going to share with you my feedback on the PNPT certification that I passed at the beginning of August 2023 by reviewing the before and during the exam!</p>
 <hr>
 <div class="post__toc">
@@ -49,7 +49,7 @@
 </div>
 <h1 id="my-knowledge">My Background</h1>
 <p>Before we dive deeper, let me clarify my experience since I see few people talking about their skills before starting the examination. I have 4 years of experience in the field of computer security, with 2 actual years spent as a Pentester. I frequently practice at home, as well as during missions conducting intrusion tests on both internal and external client environments. Moreover, report writing is no longer a mysterious art for me. So, I’m embarking on this certification with a significant advantage compared to someone new to this field. 🛡️</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/pnpt-2.jpeg" alt="" width="468" height="297" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/pnpt-2-xs.jpeg 300w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/pnpt-2-sm.jpeg 480w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/pnpt-2-md.jpeg 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/pnpt-2.jpeg" alt="" width="468" height="297" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/2/responsive/pnpt-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/2/responsive/pnpt-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/2/responsive/pnpt-2-md.jpeg 768w"></figure>
 <h1 id="mcetoc_1h7tmfdnggn">PNPT &amp; Package Course</h1>
 <p>Before purchasing the PNPT courses and voucher, it’s essential to note that the two exam vouchers do not have an expiration date. The courses are available on the Academic TCM-Security platform, and you’ll be provided with five courses, along with their completion percentages, to give you an idea of what I’ve gone through so far:</p>
 <ul>
@@ -82,7 +82,7 @@
 <h2 id="mcetoc_1h7tmfdnggr">My Exam</h2>
 <p>As for me, I faced a few challenges during the enumeration phase. I won’t say more to avoid spoiling anything! The attacks weren’t overly difficult; they’re entirely manageable even for beginners if you follow the courses provided by TCM.</p>
 <p>Still, it’s a lab exam that somewhat mirrors reality, even though everything is designed to give you hints about where to look and what to do without causing too many issues.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/meme-0.jpg" alt="Private PNPT joke" width="369" height="298" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-0-xs.jpg 300w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-0-sm.jpg 480w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-0-md.jpg 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/meme-0.jpg" alt="Private PNPT joke" width="369" height="298" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/2/responsive/meme-0-xs.jpg 300w ,https://alrikrr.github.io/media/posts/2/responsive/meme-0-sm.jpg 480w ,https://alrikrr.github.io/media/posts/2/responsive/meme-0-md.jpg 768w"></figure>
 <h1 id="mcetoc_1h7tmfdnggs">Report Period - 2 days</h1>
 <p>When it comes to the report writing phase, it’s also nothing overly complicated. I can only advise you to capture screenshots BEFORE your exam period ends!</p>
 <p>As for what I did, I took notes on the vulnerabilities I discovered and how to exploit them. It’s important to provide Proof of Concepts (PoCs) but also suggestions for fixing them. Remember, this report is intended for a client, so write it accordingly. Include both the technical and executive aspects.</p>
@@ -99,12 +99,12 @@
 <li>Attack Paths</li>
 <li>Technical Details (Vulnerability Details and PoCs)</li>
 </ul>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/meme-1.jpeg" alt="" width="517" height="499" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-1-xs.jpeg 300w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-1-sm.jpeg 480w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-1-md.jpeg 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/meme-1.jpeg" alt="" width="517" height="499" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/2/responsive/meme-1-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/2/responsive/meme-1-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/2/responsive/meme-1-md.jpeg 768w"></figure>
 <h1 id="mcetoc_1h7tmfdnggt">Final Presentation</h1>
 <p>Aside from the technical hiccups at the beginning of the presentation (well, you can’t really hide the chaos, can you…), it was quite swift – no more than 15 minutes – with a few questions from the examiner. On my end, I jumped right into presenting the English PDF report (with my French Baguette accent).</p>
 <p>The atmosphere was friendly, with no pressure as long as you’re confident in your subject! The advantage is that the examiner will give you the final verdict right away, letting you know if you’ve earned your certification or not.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/pnpt-3.gif" alt="" width="360" height="225"></figure>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/pnpt-4.gif" alt="" width="360" height="202"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/pnpt-3.gif" alt="" width="360" height="225"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/pnpt-4.gif" alt="" width="360" height="202"></figure>
 <div id="post-content" class="post-content">
 <p>It’s still a great experience with TCM-Security. If you have any questions, I can answer them without revealing the exam’s content. As for me, I’m leaning towards the next certification in Malware Analysis, PJMR!</p>
 </div>
@@ -117,22 +117,22 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/9-nsec21-toms-hut-part2/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/9-nsec21-toms-hut-part2/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/9-nsec21-toms-hut-part2/"/>
+        <id>https://alrikrr.github.io/9-nsec21-toms-hut-part2/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/25/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-08-15T21:53:28-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/25/nsec-Badge.jpg" alt="" />
                     If you want to fully understand this post I can only recommand you to read the previous one (Flag 8&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/25/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>If you want to fully understand this post I can only recommand you to read the previous one (Flag 8 part1)</p>
 <h1 id="re102-reverse">RE102 Reverse</h1>
 <p>Like the previous one, the architecture is Xtensa, but this time I already have the right module for Ghidra !</p>
@@ -157,29 +157,29 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/8-nsec21-toms-hut-part1/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/8-nsec21-toms-hut-part1/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/8-nsec21-toms-hut-part1/"/>
+        <id>https://alrikrr.github.io/8-nsec21-toms-hut-part1/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/24/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-08-15T21:52:35-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/24/nsec-Badge.jpg" alt="" />
                     The next 2 Flags are binary reverse, I was very very rusty on this one … So, this challenge is&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/24/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>The next 2 Flags are binary reverse, I was very very rusty on this one …</p>
 <h1 id="wi-fi-join">Wi-Fi Join</h1>
 <p>So, this challenge is accessible from Tom’s Hut after you have joined a Wi-Fi network !</p>
 <p>To join a Wi-Fi network, you need to access the serial port using <code>screen</code> (check Chall 7 !) and use the following command:</p>
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/8-flag/wifi-connect.png" alt="WF-Connect" data-is-external-image="true"></p>
 <p>You should receive an IP, you can now go to Tom’s Hut and see the following message !</p>
-<figure class="post__image"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/Screenshot-from-2023-04-20-16-30-56.png" alt="" width="941" height="837" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-xs.png 300w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-sm.png 480w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/Screenshot-from-2023-04-20-16-30-56.png" alt="" width="941" height="837" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-md.png 768w"></figure>
 <p>Download both of the binaries, RE101 and RE102.</p>
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/8-flag/download-re.png" alt="Download Binaries" data-is-external-image="true"></p>
 <h1 id="re101---reverse">RE101 - Reverse</h1>
@@ -272,22 +272,22 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/7-nsec21-reboot/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/7-nsec21-reboot/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/23/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/7-nsec21-reboot/"/>
+        <id>https://alrikrr.github.io/7-nsec21-reboot/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-08-15T21:49:17-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/23/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" alt="" />
                     I was also lucky on this one. After connecting to the device using the serial port with the screen command:&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/23/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>I was also lucky on this one.</p>
 <h1 id="tty-cli">tty CLI</h1>
 <p>After connecting to the device using the serial port with the screen command:</p>
@@ -316,22 +316,22 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/5-nsec21-punk-down/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/5-nsec21-punk-down/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/22/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/5-nsec21-punk-down/"/>
+        <id>https://alrikrr.github.io/5-nsec21-punk-down/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/22/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-08-15T21:48:30-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/22/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/22/nsec-Badge.jpg" alt="" />
                     Okay for this one I don’t have the reference but I managed to found it by accident ! It’s actually&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/22/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/22/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Okay for this one I don’t have the reference but I managed to found it by accident ! It’s actually the second one I found during my journey.</p>
 <h1 id="punk-guy">Punk Guy</h1>
 <p>I was playing around the place and speak to this Punk Guy right here<br><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/5-flag/flag5.png" alt="Punk Guy" data-is-external-image="true"></p>
@@ -347,22 +347,22 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/1-nsec21-welcome/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/1-nsec21-welcome/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/21/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/1-nsec21-welcome/"/>
+        <id>https://alrikrr.github.io/1-nsec21-welcome/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/21/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-08-15T21:47:43-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/21/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/21/nsec-Badge.jpg" alt="" />
                     Hello everyone ! It’s been a while since my last post but I’m still alive no worries 😁 Today I’m&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/21/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/21/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Hello everyone ! It’s been a while since my last post but I’m still alive no worries 😁</p>
 <p>Today I’m gonna post some write-up for the NorthSec 2021 Badge CTF ! I purchase the badge last year and din’t have time to play with it so here I am !<br>It’s actually my first CTF Badge and I hope im going to fine all the flags !</p>
 <h1 id="device">Device</h1>
@@ -384,21 +384,21 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/my-crts-feedback/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/my-crts-feedback/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/4/my-crts.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/my-crts-feedback/"/>
+        <id>https://alrikrr.github.io/my-crts-feedback/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/4/my-crts.jpg" medium="image" />
             <category term="Updates"/>
 
         <updated>2023-08-15T19:10:06-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/4/my-crts.jpg" alt="My CRTS Feedback" />
+                        <img src="https://alrikrr.github.io/media/posts/4/my-crts.jpg" alt="My CRTS Feedback" />
                     Hello everyone, Happy New Year ! This is actually my first post of 2023 and nothing better than to tell&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/4/my-crts.jpg" class="type:primaryImage" alt="My CRTS Feedback" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/4/my-crts.jpg" class="type:primaryImage" alt="My CRTS Feedback" /></p>
                 <div>Hello everyone, Happy New Year !</div>
 <div>This is actually my first post of 2023 and nothing better than to tell you about a certification I just completed. </div>
 <h1>What's CRTS ?</h1>
@@ -406,7 +406,7 @@
 <div>CRTS or Certified Red Team Specialist from<a href="https://www.cyberwarfare.live/" target="_blank" rel="noopener noreferrer"> Cyber Warfare</a> is a Technical Certification designed to improve your Red Team skills in many Offensive Fields. Your goal is to compromise an entire lab including 4 different networks !</div>
 <br>
 <div>You must use one of three attack paths to do this. Here is a picture of the internal lab.</div>
-<div><figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/4/crts-lab.png" alt="" width="2560" height="1440" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/4/responsive/crts-lab-xs.png 300w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/4/responsive/crts-lab-sm.png 480w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/4/responsive/crts-lab-md.png 768w"></figure></div>
+<div><figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/4/crts-lab.png" alt="" width="2560" height="1440" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/4/responsive/crts-lab-xs.png 300w ,https://alrikrr.github.io/media/posts/4/responsive/crts-lab-sm.png 480w ,https://alrikrr.github.io/media/posts/4/responsive/crts-lab-md.png 768w"></figure></div>
 <a href="https://www.cyberwarfare.live/courses/certified-red-team-specialist" target="_blank" rel="noopener noreferrer">Certification Link</a></div>
 <div> </div>
 <div>
@@ -425,21 +425,21 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/tp-link-ac750-wifi-router/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/tp-link-ac750-wifi-router/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/11/iot.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/tp-link-ac750-wifi-router/"/>
+        <id>https://alrikrr.github.io/tp-link-ac750-wifi-router/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/11/iot.jpg" medium="image" />
             <category term="IoT Hacking"/>
 
         <updated>2023-08-15T20:43:21-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/11/iot.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/11/iot.jpg" alt="" />
                     Improper handling of electronic components can lead to component destruction Here is my LinkedIn post related to this article : LinkedIn-Post&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/11/iot.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/11/iot.jpg" class="type:primaryImage" alt="" /></p>
                 <p class="alert alert-danger msg msg--warning"><strong>Improper handling of electronic components can lead to component destruction</strong></p>
 <p class="alert alert-info msg msg--warning"><strong>Here is my LinkedIn post related to this article : <a href="https://www.linkedin.com/feed/update/urn:li:activity:6978797904089989120/">LinkedIn-Post</a></strong></p>
 <hr>
@@ -454,7 +454,7 @@
 <li>UART Device like Wifi Router</li>
 </ul>
 <h2 id="uart-">UART ?</h2>
-<p>If you are not familiar with UART ports, I would recommend you to check my article on Flipper-Zero Section <strong><a href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/flipperzero-uart-bridge-rpi4-to-flipper/index.html" target="_blank" rel="noopener noreferrer">UART USB Bridge</a></strong></p>
+<p>If you are not familiar with UART ports, I would recommend you to check my article on Flipper-Zero Section <strong><a href="https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/" target="_blank" rel="noopener noreferrer">UART USB Bridge</a></strong></p>
 <p>If this is not enough, check out this video of FlashBack-Team <a href="https://youtu.be/01mw0oTHwxg">Hacker’s Guide to UART Root Shells</a></p>
 <h1 id="tp-link-ac750">TP-Link AC750</h1>
 <h2 id="informations">Informations</h2>
@@ -501,7 +501,7 @@
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/uart-bridge.png" alt="UART Bridge" data-is-external-image="true"></p>
 <p>The UART bridge is very simple, here is a small schemas :</p>
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/plan.png" alt="Plan" data-is-external-image="true"></p>
-<p>I’ll recommand you to check my post about this part : <a href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/flipperzero-uart-bridge-rpi4-to-flipper/index.html" target="_blank" rel="noopener noreferrer">UART USB Bridge</a></p>
+<p>I’ll recommand you to check my post about this part : <a href="https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/" target="_blank" rel="noopener noreferrer">UART USB Bridge</a></p>
 <p>Using <code>minicom</code> we can get a shell once the device is powered on !</p>
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/2_filesystem.png" alt="FileSystem" data-is-external-image="true"></p>
 <h1 id="shell-and-enumeration">Shell and Enumeration</h1>
@@ -538,21 +538,21 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/firmware-reverse-or-d-link-dcs-932l/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/firmware-reverse-or-d-link-dcs-932l/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/12/firmware.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/firmware-reverse-or-d-link-dcs-932l/"/>
+        <id>https://alrikrr.github.io/firmware-reverse-or-d-link-dcs-932l/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/12/firmware.jpg" medium="image" />
             <category term="IoT Hacking"/>
 
         <updated>2023-08-15T20:46:19-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/12/firmware.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/12/firmware.jpg" alt="" />
                     This is actually my first firmware “Reverse”. This post will also serve as a tutorial for myself and others !&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/12/firmware.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/12/firmware.jpg" class="type:primaryImage" alt="" /></p>
                 <p class="alert alert-warning msg msg--warning"><strong>This is actually my first firmware “Reverse”. This post will also serve as a tutorial for myself and others !</strong></p>
 <p class="alert alert-danger msg msg--warning"><strong>For education purpose</strong></p>
 <hr>
@@ -708,27 +708,27 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/flipperzero-uart-bridge-rpi4-to-flipper/index.html"/>
-        <id>file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/flipperzero-uart-bridge-rpi4-to-flipper/index.html</id>
-        <media:content url="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/6/banner.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/"/>
+        <id>https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/6/banner.jpg" medium="image" />
             <category term="FlipperZero"/>
 
         <updated>2023-08-15T20:11:48-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/6/banner.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/6/banner.jpg" alt="" />
                     This is a simple tutorial for UART bridge function on the Flipper Zero. I’m using RaspberryPi4, FlipperZero and a Macbook&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:////Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/6/banner.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/6/banner.jpg" class="type:primaryImage" alt="" /></p>
                 <p>This is a simple tutorial for UART bridge function on the Flipper Zero. I’m using RaspberryPi4, FlipperZero and a Macbook laptop for this tutorial.</p>
 <hr>
 <h1></h1>
 <h1>Schema</h1>
 <p>The bridge is pretty simple, we connect UART pin from Raspberry Pi4 to Flipper Zero and get a shell using flipper <code>tty</code> from the laptop.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/6/plan.png" alt="" width="1304" height="766" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/6/responsive/plan-xs.png 300w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/6/responsive/plan-sm.png 480w ,file:///Users/adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/6/responsive/plan-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/6/plan.png" alt="" width="1304" height="766" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/6/responsive/plan-xs.png 300w ,https://alrikrr.github.io/media/posts/6/responsive/plan-sm.png 480w ,https://alrikrr.github.io/media/posts/6/responsive/plan-md.png 768w"></figure>
 <h1>UART Concept</h1>
 <p>UART is a serial protocol, which means it transfers data between components one bit at a time.</p>
 <p>To synchornize communications, the UART transmitter and receiver must agree on a specific baud rate ( the rate of bits transmitted per second)</p>

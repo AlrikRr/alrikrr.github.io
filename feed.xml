@@ -3,12 +3,74 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2023-08-15T21:53:28-04:00</updated>
+    <updated>2023-09-13T18:11:28-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
     <id>https://alrikrr.github.io</id>
 
+    <entry>
+        <title>Thinkpad T470 - Fingerprint Sensor Setup</title>
+        <author>
+            <name>AlrikRr</name>
+        </author>
+        <link href="https://alrikrr.github.io/thinkpad-t470-fingerprint-working-linux/"/>
+        <id>https://alrikrr.github.io/thinkpad-t470-fingerprint-working-linux/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/32/linux-banner.jpg" medium="image" />
+            <category term="Linux"/>
+
+        <updated>2023-09-13T18:11:28-04:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://alrikrr.github.io/media/posts/32/linux-banner.jpg" alt="" />
+                    Hello everyone, today's tutorial can be helpful for those who struggle with using and getting the fingerprint device to work&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://alrikrr.github.io/media/posts/32/linux-banner.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Hello everyone, today's tutorial can be helpful for those who struggle with using and getting the fingerprint device to work on their Thinkpad when running a Linux system!<br><br>On my end, I'm using a<strong> Thinkpad T470 </strong>with a brand new SSD, and I've got <strong>PopOs</strong> installed – it's running like a charm!</p>
+<p>Most of the commands can be found using the python-validity github repo right there</p>
+<ul>
+<li><a href="https://github.com/uunicorn/python-validity" target="_blank" rel="noopener noreferrer">python-validity github link</a></li>
+</ul>
+<h1>Update apt repo</h1>
+<p>Since i'm using a ubuntu-like system i'll be using the ubuntu commands, feel free to check the github repo for other linux systems</p>
+<pre class="notranslate"><code>$ sudo apt remove fprintd
+$ sudo add-apt-repository ppa:uunicorn/open-fprintd
+$ sudo apt-get update
+$ sudo apt install open-fprintd fprintd-clients python3-validity
+$ fprintd-enroll</code></pre>
+<h1>Enroll new fingerprint</h1>
+<p>Now if you don´t have any error, you should be able to register your fingerprint using the command <code>fprintd-enroll</code> and press your finger to the fingerprint device multiple times until you get the message <code>Enroll result: enroll-completed</code></p>
+<figure class="post__image"><code></code><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/fprintd-enroll.png" alt="Enroll-Print" width="526" height="279" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/fprintd-enroll-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/fprintd-enroll-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/fprintd-enroll-md.png 768w"></figure>
+<h2>Error list_devices failed:</h2>
+<p>Now, if, like me, it doesn't work the first time, well, that's okay – nobody's perfect</p>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/error-enroll.png" alt="" width="313" height="53" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/error-enroll-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/error-enroll-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/error-enroll-md.png 768w"></figure>
+<p>If you check your python3-validity.service it should show you an error</p>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/error-systemctl.png" alt="" width="1510" height="414" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/error-systemctl-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/error-systemctl-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/error-systemctl-md.png 768w"></figure>
+<p>You just need to do a factory reset of your fingerprint device using the command below</p>
+<p><code></code></p>
+<pre class="notranslate"><code>$ sudo systemctl stop python3-validity
+$ sudo validity-sensors-firmware
+$ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pre>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/factory-reset.png" alt="" width="1200" height="450" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/factory-reset-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/factory-reset-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/factory-reset-md.png 768w"></figure>
+<p>Now you should be able to start the python3-validy.service and enrolling your new fingerprint !</p>
+<h1>PAM enable</h1>
+<p>Before doing anything else, you want to enable the dinger-print device to unlock your session or using your finger to run a sudo command !</p>
+<p>Do to so you'll need to update the PAM rules using </p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+<pre class="notranslate"><code>$ sudo pam-auth-update
+</code></pre>
+<div class="zeroclipboard-container position-absolute right-0 top-0"><figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/pam-update.png" alt="" width="1883" height="526" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/pam-update-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/pam-update-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/pam-update-md.png 768w"></figure></div>
+</div>
+<p>Here are the first lines of my <code>/etc/pam.d/common-auth</code> file</p>
+<pre>auth    [success=2 default=ignore]    pam_fprintd.so max_tries=1 timeout=10 # debug<br>auth    [success=1 default=ignore]    pam_unix.so try_first_pass nullok_secure</pre>
+<p>Now your sensor should be working. Perhaps a reboot wouldn't hurt to ensure everything is functioning correctly!</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>My PNPT FeedBack</title>
         <author>
@@ -700,110 +762,6 @@
 <p>From this script we can see a nasty <code>chmod 777</code> on the home directory of the current user or the ser created.</p>
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/storage.jpeg" alt="storage" data-is-external-image="true"></p>
 <p>Here is the github that contains all the scripts files : <a href="https://github.com/socoola/yhrouter/blob/master/user/rt2880_app/scripts/storage.sh">github-scripts</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>FlipperZero - UART Bridge RPi4 to Flipper</title>
-        <author>
-            <name>AlrikRr</name>
-        </author>
-        <link href="https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/"/>
-        <id>https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/</id>
-        <media:content url="https://alrikrr.github.io/media/posts/6/banner.jpg" medium="image" />
-            <category term="FlipperZero"/>
-
-        <updated>2023-08-15T20:11:48-04:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://alrikrr.github.io/media/posts/6/banner.jpg" alt="" />
-                    This is a simple tutorial for UART bridge function on the Flipper Zero. I’m using RaspberryPi4, FlipperZero and a Macbook&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alrikrr.github.io/media/posts/6/banner.jpg" class="type:primaryImage" alt="" /></p>
-                <p>This is a simple tutorial for UART bridge function on the Flipper Zero. I’m using RaspberryPi4, FlipperZero and a Macbook laptop for this tutorial.</p>
-<hr>
-<h1></h1>
-<h1>Schema</h1>
-<p>The bridge is pretty simple, we connect UART pin from Raspberry Pi4 to Flipper Zero and get a shell using flipper <code>tty</code> from the laptop.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/6/plan.png" alt="" width="1304" height="766" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/6/responsive/plan-xs.png 300w ,https://alrikrr.github.io/media/posts/6/responsive/plan-sm.png 480w ,https://alrikrr.github.io/media/posts/6/responsive/plan-md.png 768w"></figure>
-<h1>UART Concept</h1>
-<p>UART is a serial protocol, which means it transfers data between components one bit at a time.</p>
-<p>To synchornize communications, the UART transmitter and receiver must agree on a specific baud rate ( the rate of bits transmitted per second)</p>
-<p>Important concept :</p>
-<ul>
-<li><code>RX</code> : Receive, will get the data</li>
-<li><code>TX</code> : Transmit, will transfer the data</li>
-<li><code>GND</code> : Ground</li>
-<li><code>VCC</code> : Voltage, not used here since powered by USB cable</li>
-</ul>
-<p class="msg--highlight  msg--info msg "><strong>The <code>RX(10)</code> pin from Rapsberry Pi must be connected to the <code>TX(13)</code> from FlipperZero.<br>The <code>TX(8)</code> pin from Raspberry Pi must be connected to the <code>RX(14)</code> from FlipperZero.</strong></p>
-<p>It can be confused at the first place put it make sense since the Transmiter must send the bits to the receiver.</p>
-<h2>Identify GND</h2>
-<ul>
-<li>Power Off the device you want to test</li>
-<li>Turn your multimeter dial to continuity Test mode (sound wave icon)</li>
-<li>Place Black lead to any metalic part of the circuit/PCB (Direct conductive path to earth)</li>
-<li>Place Red lead on each of the UART port and wait for buzzer sound, if sound then its the GND pin from UART</li>
-</ul>
-<h2>Identify VCC</h2>
-<ul>
-<li>Power the device you are testing</li>
-<li>Turn Multimeter dial to DC voltage mode and set it to 20V</li>
-<li>Place Black lead to any metalic part of the PCB</li>
-<li>Place Red on suspected UART pin until the voltage indicates <code>3.3V</code> or <code>5V</code>, this is the Vcc pin.</li>
-</ul>
-<h2>Identify TX</h2>
-<ul>
-<li>Turn off the device</li>
-<li>Keep Multimeter on DC voltage of 20V</li>
-<li>Place Black lead on any metalic part of the PCB, like the GND testing part</li>
-<li>Place Red lead on supected Pin</li>
-<li>Power up the device and check the voltage value : If the voltage fluctuates for a few seconds and then stabilizes at the Vcc value (<code>3.3V</code> or <code>5V</code>) then it means this is <code>TX</code> pin.</li>
-</ul>
-<p class="alert alert-info msg msg--info"><strong>💡 The variations appears because the device is Booting and send data to <code>TX</code> for debuging.</strong></p>
-<h2>Identify RX</h2>
-<p>Well, this is most likely the last one.</p>
-<ul>
-<li>Like TX test</li>
-<li>You can identify it because it has the lowest voltage variation and lowest overall value of all the UART pins</li>
-</ul>
-<h1>Setup</h1>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/posts/flipper-zero/flipper-gpio/uart-bridge-pi4/setup.png" alt="Minicom Serial port" width="702" height="431" data-is-external-image="true"></figure>
-<p>Here is my setup in a single picture. Like in the schema, Raspberry RX,TX to Flipper TX,RX and Flipper connected with USB port on my laptop.</p>
-<p>The Raspberry is also powered on the laptop just for the power.</p>
-<h2>Minicom</h2>
-<p>First you need to install minicom</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell"><span class="hljs-meta">#</span><span class="bash"> MacOs</span>
-brew install minicom
-<span class="hljs-meta">#</span><span class="bash"> Linux</span>
-apt install minicom
-</code></pre>
-</div>
-<p>Once installed, change the default serial port `/dev/modem/ to your flipper.</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">minicom -s
-</code></pre>
-</div>
-<p>Go to <code>Serial Port Setup</code> and then enter <code>A</code>.</p>
-<p>Here I’m using the <code>/dev/tty.usbmodemflip_Il4l0w1</code> port of my Flipper.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/flipper-zero/flipper-gpio/uart-bridge-pi4/minicom-serial.png" alt="Minicom Serial port" data-is-external-image="true"></p>
-<p>Now you can start minicom</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">minicom
-</code></pre>
-</div>
-<p>Once minicom is started, you just need to plug the UART pin to your Flipper then use the UART Bridge fonction on GPIO menu.</p>
-<figure class="center"><img loading="lazy"  src="https://alrikrr.github.io/posts/flipper-zero/flipper-gpio/uart-bridge-pi4/uart-app.png" alt="UART APp" data-is-external-image="true"></figure>
-<p>You can leave the default configuration, if the Baud is not set, just change it to <code>115200</code>.<br>TO find the right Baud, you need to check the documentation or use the most common baud rates like <code>9600</code>, <code>38400</code>, <code>19200</code>, <code>57600</code> and <code>115200</code>.</p>
-<h2 id="shell-">Shell !</h2>
-<p>Once the UART Brige Application selected, you should see the login prompt from the raspberry pi.</p>
-<figure class="center"><img loading="lazy"  src="https://alrikrr.github.io/posts/flipper-zero/flipper-gpio/uart-bridge-pi4/prompt.png" alt="Prompt" data-is-external-image="true"></figure>
-<p>You can now login to the Raspberry Pi and enjoy your shell !</p>
-<figure class="center"><img loading="lazy"  src="https://alrikrr.github.io/posts/flipper-zero/flipper-gpio/uart-bridge-pi4/logged.png" alt="UART Shell" data-is-external-image="true"></figure>
             ]]>
         </content>
     </entry>

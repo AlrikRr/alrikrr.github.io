@@ -3,12 +3,36 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2023-09-13T18:11:28-04:00</updated>
+    <updated>2023-09-13T18:45:37-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
     <id>https://alrikrr.github.io</id>
 
+    <entry>
+        <title>IMPORTANT : Blog Issue</title>
+        <author>
+            <name>AlrikRr</name>
+        </author>
+        <link href="https://alrikrr.github.io/blog-issue/"/>
+        <id>https://alrikrr.github.io/blog-issue/</id>
+            <category term="Updates"/>
+
+        <updated>2023-09-13T18:45:37-04:00</updated>
+            <summary>
+                <![CDATA[
+                    Hi There ! Just to let you know that most of the pictures from the articles on my website are&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Hi There !</p>
+<p>Just to let you know that most of the pictures from the articles on my  website are broken at the moment !</p>
+<p>I'll try to fix that soon! Sorry for any inconvenience caused.</p>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/33/7z21s3.gif" alt="" width="260" height="326"></figure>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Thinkpad T470 - Fingerprint Sensor Setup</title>
         <author>
@@ -592,176 +616,6 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/6_login_http.png" alt="SSIDPassword" data-is-external-image="true"></p>
 <p>Next time i’ll dig into the admin panel and find maybe a way to get inside (Hardcoded password ?)</p>
 <p>See ya !</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Firmware Reverse | D-Link - DCS-932L</title>
-        <author>
-            <name>AlrikRr</name>
-        </author>
-        <link href="https://alrikrr.github.io/firmware-reverse-or-d-link-dcs-932l/"/>
-        <id>https://alrikrr.github.io/firmware-reverse-or-d-link-dcs-932l/</id>
-        <media:content url="https://alrikrr.github.io/media/posts/12/firmware.jpg" medium="image" />
-            <category term="IoT Hacking"/>
-
-        <updated>2023-08-15T20:46:19-04:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://alrikrr.github.io/media/posts/12/firmware.jpg" alt="" />
-                    This is actually my first firmware “Reverse”. This post will also serve as a tutorial for myself and others !&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alrikrr.github.io/media/posts/12/firmware.jpg" class="type:primaryImage" alt="" /></p>
-                <p class="alert alert-warning msg msg--warning"><strong>This is actually my first firmware “Reverse”. This post will also serve as a tutorial for myself and others !</strong></p>
-<p class="alert alert-danger msg msg--warning"><strong>For education purpose</strong></p>
-<hr>
-<h1 id="sources">Sources</h1>
-<ul>
-<li>Version : <code>1.14.04</code></li>
-<li>MD5 : <code>b93d60f595c4736a153ca8c61d77ffc6</code></li>
-<li>Download link <a href="http://files.dlink.com.au/products/DCS-932L/REV_A/Firmware/">http://files.dlink.com.au/products/DCS-932L/REV_A/Firmware/</a></li>
-</ul>
-<p>This test we perfomed on Kali Linux VM.</p>
-<h1 id="stage-1---analysis">Stage 1 - Analysis</h1>
-<p>Using <code>binwalk</code> we can “walk” through the firmware and check signatures inside the binary, those signatures return known Desciption and Hex address. of what’s inside the binary.</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">binwalk dcs932l_v1.14.04.bin
-</code></pre>
-</div>
-<p>Here is the output</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">DECIMAL       HEXADECIMAL     DESCRIPTION
---------------------------------------------------------------------------------
-106352        0x19F70         U-Boot version string, "U-Boot 1.1.3"
-106816        0x1A140         CRC32 polynomial table, little endian
-124544        0x1E680         HTML document header
-124890        0x1E7DA         HTML document footer
-124900        0x1E7E4         HTML document header
-125092        0x1E8A4         HTML document footer
-125260        0x1E94C         HTML document header
-125953        0x1EC01         HTML document footer
-327680        0x50000         uImage header, header size: 64 bytes, header CRC: 0x88345E96, created: 2016-09-09 13:52:27, image size: 3804958 bytes, Data Address: 0x80000000, Entry Point: 0x803B8000, data CRC: 0x531E94DE, OS: Linux, CPU: MIPS, image type: OS Kernel Image, compression type: lzma, image name: "Linux Kernel Image"
-327744        0x50040         LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, uncompressed size: 6558763 bytes
-</code></pre>
-</div>
-<h2 id="binwalk-result">Binwalk Result</h2>
-<ul>
-<li><code>106352 - 0x19F70</code> : U-Boot 1.1.3</li>
-<li><code>327680 - 0x50000</code> : Linux Kernel Image</li>
-<li><code>327744 - 0x50040</code> : LZMA Compress Data</li>
-</ul>
-<p>uImage Header at <code>327680</code> tell us that we can found a LInux Kerne Image in a LZMA arhcive format.</p>
-<h2 id="decompress-lzma">Decompress LZMA</h2>
-<p>Unpack the LZMA Archive using <code>dd</code> tool. We output the result inside the <code>kernal.lzma</code> file.</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">dd if=dcs932l_v1.14.04.bin skip=327744 bs=1 of=kernel.lzma
-</code></pre>
-</div>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/kernellzmq.jpeg" alt="kernel.lzma" data-is-external-image="true"></p>
-<p>Make sure the LZMA file is well extracted</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/kernel-check.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<p>Now let’s extract the LZMA achive using <code>unlzma</code> tool</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">unlzma -d &lt; kernel.lzma &gt; kernel
-</code></pre>
-</div>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/lzma-check.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<div class="alert alert-warning"><strong>Got an error while extracting the kernel bit it seems working just fine for now , lucky me.</strong></div>
-<h1 id="stage-2---kernel">Stage 2 - Kernel</h1>
-<p>Now we have the kernel in our hands, let’s see what’s in there.</p>
-<p>Again we use <code>binwalk</code></p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">DECIMAL       HEXADECIMAL     DESCRIPTION
---------------------------------------------------------------------------------
-3145804       0x30004C        Linux kernel version 2.6.21
-3175792       0x307570        SHA256 hash constants, little endian
-3183312       0x3092D0        AES Inverse S-Box
-3184080       0x3095D0        AES S-Box
-3389960       0x33BA08        Unix path: /usr/gnemul/irix/
-3392244       0x33C2F4        Unix path: /usr/lib/libc.so.1
-3393940       0x33C994        Unix path: /dev/vc/0
-3408260       0x340184        Copyright string: "Copyright (c) 2010 Alpha Networks Inc."
-3491536       0x3546D0        Unix path: /etc/Wireless/RT2860STA/RT2860STA.dat
-3573187       0x3685C3        Neighborly text, "neighbor %.2x%.2x.%.2x:%.2x:%.2x:%.2x:%.2x:%.2x lost on port %d(%s)(%s)"
-3807776       0x3A1A20        CRC32 polynomial table, little endian
-3811440       0x3A2870        AES S-Box
-4038656       0x3DA000        LZMA compressed data, properties: 0x5D, dictionary size: 1048576 bytes, uncompressed size: 8072704 bytes
-</code></pre>
-</div>
-<p>Another LZMA archive is visible at 4038656</p>
-<h2 id="extract-unkown-lzma-archive">Extract Unkown LZMA archive</h2>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/unkown.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">unlzma -d &lt; unknown.lzma &gt; unkown
-</code></pre>
-</div>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/unknown1.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<p>And here we go, Here is the <code>CPIO</code> archive thta contain the file system of the firnware.</p>
-<h2 id="cves">CVEs</h2>
-<p>In the same time, the first <code>binwalk</code> on the kernel file give us the CVE output of the current kernel version <strong><code>Linux Kernel 2.6.21 - 15 CVE</code></strong></p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">1	CVE-2012-1583	399		DoS	2012-06-16	2016-08-23	5.0	None	Remote	Low	Not
-2	CVE-2009-2406	119		DoS
-3	CVE-2009-1389	119		DoS
-4	CVE-2009-0778			DoS	2009-03-12	2020-08-28	7.1	None	Remote	Medium	Not
-5	CVE-2008-4609	16		DoS	2008-10-20	2021-07-07	7.1	None	Remote	Medium	Not
-6	CVE-2008-2750	20		DoS
-7	CVE-2008-1669	94		Exec
-8	CVE-2008-1294	20		Bypass	2008-05-02	2018-10-30	2.1	None	Local	Low	Not
-9	CVE-2008-0600	94		+Priv	2008-02-12	2018-10-30	7.2	None	Local	Low	Not
-10	CVE-2008-0352	119		DoS
-11	CVE-2007-2876			DoS	2007-06-11	2018-10-30	6.1	None	Local
-12	CVE-2007-2453				2007-06-11	2018-10-30	1.2	None	Local	High	Not
-13	CVE-2007-2451			+Info	2007-05-29	2018-10-30	5.0	None	Remote	Low	Not
-14	CVE-2007-2172	20			2007-04-22	2018-10-19	4.7	None	Local	Medium	Not
-15	CVE-2006-6058	189		DoS
-</code></pre>
-</div>
-<h1 id="stage-3---unpack-cpio">Stage 3 - Unpack CPIO</h1>
-<p>Now let’s unpack this arhive CPIO and see if we an get the file system.</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">sudo cpio -idm --no-absolute-filenames &lt; ../unkown
-</code></pre>
-</div>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/cpiounpack.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<p>The filesystem is here we can now explore it on our own</p>
-<h1 id="stage-4---filesystem">Stage 4 - Filesystem</h1>
-<h2 id="etc_ro">/etc_ro/</h2>
-<p>Inside the <code>/etc_ro/</code> folder we can see custom script and a web folder application.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/etc_ro.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<p>Simple Web application and private keys auto signed for the web server</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/etc_ro2.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<p>Another firmware in the WLAN folder <img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/etc_ro3.jpeg" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<p>And then the private RSA key fo the web server</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/etc_ro4.png" alt="kernel.lzma.check" data-is-external-image="true"></p>
-<h2 id="sbin">/sbin/</h2>
-<p>The sbin folder seems to be more interesting since we can check the custom scripts. <img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/sbin1.jpeg" alt="sbin" data-is-external-image="true"></p>
-<p>First thing I see while checking the custom scripts is that the absolute path of the binaries is not mentionned, this can be used as an exploit to bypass the real binary and use a malicious one if the <code>$PATH</code> variable is changed.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/sbin2.jpeg" alt="sbin" data-is-external-image="true"></p>
-<h2 id="internetsh">internet.sh</h2>
-<p>This script is interesting, since we can see the process of creating a new user on the system which is added directly to the <code>/ect/passwd</code>.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/sbin3.jpeg" alt="sbin" data-is-external-image="true"></p>
-<p>Here is some source code for the <a href="https://github.com/Nossiac/mtk-openwrt-feeds/blob/master/applications/wificonf/files/usr/bin/nvram_get">nvram_get(click-me)</a> function, from <code>wificonf</code> package.</p>
-<p>This function seems to retreive a value from a device</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell">nvram_get [dev] &lt;key&gt;
-</code></pre>
-</div>
-<p>The value 2880 seems to be a default value for the first card</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-shell hljs" data-lang="shell"><span class="hljs-meta">#</span><span class="bash"> <span class="hljs-keyword">else</span>, try default mapping with l1profile:</span>
-<span class="hljs-meta">#</span><span class="bash">     2880  -&gt; 1st card</span>
-<span class="hljs-meta">#</span><span class="bash">     rtdev -&gt; 2nd card</span>
-<span class="hljs-meta">#</span><span class="bash">     wifi3 -&gt; 3rd card</span>
-</code></pre>
-</div>
-<h2 id="storagesh">storage.sh</h2>
-<p>From this script we can see a nasty <code>chmod 777</code> on the home directory of the current user or the ser created.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/d-link-dcs-932l/storage.jpeg" alt="storage" data-is-external-image="true"></p>
-<p>Here is the github that contains all the scripts files : <a href="https://github.com/socoola/yhrouter/blob/master/user/rt2880_app/scripts/storage.sh">github-scripts</a></p>
             ]]>
         </content>
     </entry>

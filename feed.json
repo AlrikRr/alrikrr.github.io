@@ -31,6 +31,7 @@
             "title": "IMPORTANT : Blog Issue",
             "summary": "Hi There ! Just to let you know that most of the pictures from the articles on my website are&hellip;",
             "content_html": "<p>Hi There !</p>\n<p>Just to let you know that most of the pictures from the articles on my  website are broken at the moment !</p>\n<p>I'll try to fix that soon! Sorry for any inconvenience caused.</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://alrikrr.github.io/media/posts/33/7z21s3.gif\" alt=\"\" width=\"260\" height=\"326\"></figure>",
+            "image": "https://alrikrr.github.io/media/posts/33/Issue-Banner.jpg",
             "author": {
                 "name": "AlrikRr"
             },
@@ -38,7 +39,7 @@
                    "Updates"
             ],
             "date_published": "2023-09-13T18:45:03-04:00",
-            "date_modified": "2023-09-13T18:45:37-04:00"
+            "date_modified": "2023-09-15T11:16:43-04:00"
         },
         {
             "id": "https://alrikrr.github.io/thinkpad-t470-fingerprint-working-linux/",

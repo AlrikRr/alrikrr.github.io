@@ -3,7 +3,7 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2023-09-15T11:02:57-04:00</updated>
+    <updated>2023-09-15T11:16:43-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
@@ -60,16 +60,19 @@
         </author>
         <link href="https://alrikrr.github.io/blog-issue/"/>
         <id>https://alrikrr.github.io/blog-issue/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/33/Issue-Banner.jpg" medium="image" />
             <category term="Updates"/>
 
-        <updated>2023-09-13T18:45:37-04:00</updated>
+        <updated>2023-09-15T11:16:43-04:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://alrikrr.github.io/media/posts/33/Issue-Banner.jpg" alt="" />
                     Hi There ! Just to let you know that most of the pictures from the articles on my website are&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://alrikrr.github.io/media/posts/33/Issue-Banner.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Hi There !</p>
 <p>Just to let you know that most of the pictures from the articles on my  website are broken at the moment !</p>
 <p>I'll try to fix that soon! Sorry for any inconvenience caused.</p>

@@ -3,12 +3,56 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2023-09-13T18:52:23-04:00</updated>
+    <updated>2023-09-15T10:54:23-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
     <id>https://alrikrr.github.io</id>
 
+    <entry>
+        <title>Invalide Device - FlipperZero Repair </title>
+        <author>
+            <name>AlrikRr</name>
+        </author>
+        <link href="https://alrikrr.github.io/invalide-device-flipperzero-repair/"/>
+        <id>https://alrikrr.github.io/invalide-device-flipperzero-repair/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/34/FlipperZero.jpg" medium="image" />
+            <category term="FlipperZero"/>
+
+        <updated>2023-09-15T10:54:23-04:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://alrikrr.github.io/media/posts/34/FlipperZero.jpg" alt="" />
+                    If, like me, you enjoy playing with your flipper and happen to install a somewhat unstable custom firmware, you might&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://alrikrr.github.io/media/posts/34/FlipperZero.jpg" class="type:primaryImage" alt="" /></p>
+                <p>If, like me, you enjoy playing with your flipper and happen to install a somewhat unstable custom firmware, you might find yourself faced with this error message on your qFlipper Application. It becomes impossible to update your firmware, whether through the qFlipper GUI or the web interface!<br><br>No need to panic—I have a solution! Well, there's probably a simpler way to do it, but this one works! 😄</p>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34//invalide.png" alt="" width="1724" height="1064" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34//responsive/invalide-xs.png 300w ,https://alrikrr.github.io/media/posts/34//responsive/invalide-sm.png 480w ,https://alrikrr.github.io/media/posts/34//responsive/invalide-md.png 768w"></figure>
+<h2>Turn on DFU mode</h2>
+<p>First you'll need to turn your flipper into DFU mode by doing this steps from the official Flipper Wiki, here is the link:</p>
+<p>- <a href="https://docs.flipper.net/basics/firmware-update/firmware-recovery#2vuS0">https://docs.flipper.net/basics/firmware-update/firmware-recovery#2vuS0</a> </p>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34/dfu.png" alt="" width="2556" height="936" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34/responsive/dfu-xs.png 300w ,https://alrikrr.github.io/media/posts/34/responsive/dfu-sm.png 480w ,https://alrikrr.github.io/media/posts/34/responsive/dfu-md.png 768w"></figure>
+<h2>Clone and build</h2>
+<p>Once your friend is in DFU, you'll need to dowload the firmware source and build everything, here are my linux commands:</p>
+<p><code>git clone <a href="https://github.com/flipperdevices/flipperzero-firmware.git">https://github.com/flipperdevices/flipperzero-firmware.git</a></code><br><code>cd flipperzero-firmware</code><br><code>./ftb</code></p>
+<p>Just wait a few minutes and you should see this screen, note were the firmware is stored, you'll need that for later</p>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34//build-new-firmware.png" alt="" width="880" height="444" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34//responsive/build-new-firmware-xs.png 300w ,https://alrikrr.github.io/media/posts/34//responsive/build-new-firmware-sm.png 480w ,https://alrikrr.github.io/media/posts/34//responsive/build-new-firmware-md.png 768w"></figure>
+<h2>Setup Rules</h2>
+<p>Next step is to update the qFlipper Rules, download the github repo and execute the script</p>
+<pre>git clone <a href="https://github.com/flipperdevices/qFlipper.git">https://github.com/flipperdevices/qFlipper.git</a><br><br>cd qFlipper<br><br>chmod +x setup_rules.sh<br><br>./setup_rules.sh</pre>
+<h2>Install from file</h2>
+<p>Now you can restart your qFlipper application and select the firmware file like below</p>
+<figure class="post__image post__image--full"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34//install-from-files.png" alt="" width="1847" height="724" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34//responsive/install-from-files-xs.png 300w ,https://alrikrr.github.io/media/posts/34//responsive/install-from-files-sm.png 480w ,https://alrikrr.github.io/media/posts/34//responsive/install-from-files-md.png 768w"></figure>
+<p>Just wait a bit until your Flipper is fully updated, then upgrade it again using the qFlipper app by pressing the Green Button !</p>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34/Screenshot-20230915-104512.png" alt="" width="512" height="256" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34/responsive/Screenshot-20230915-104512-xs.png 300w ,https://alrikrr.github.io/media/posts/34/responsive/Screenshot-20230915-104512-sm.png 480w ,https://alrikrr.github.io/media/posts/34/responsive/Screenshot-20230915-104512-md.png 768w"></figure>
+<p>Enjoy !</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>IMPORTANT : Blog Issue</title>
         <author>
@@ -503,119 +547,6 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <div>I would recommend starting with a solid methodology and having a prior taste of penetration testing and Red Team skills. Relying solely on the WriteUps provided by Cyberwarfare won't cut it, as it's not always 100% detailed and might not explain every command required to reach the final objective. Consider the WriteUps as an emergency toolkit for when you're stuck!<br><br>In my case, I followed my instincts for the initial attack path. When I hit roadblocks, I turned to the writeup, especially for machines that I wasn't particularly comfortable with, like the Kubernetes (K8S) and the intensive pivoting parts.</div>
 <p> </p>
 </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>TP-Link AC750 Wifi Router</title>
-        <author>
-            <name>AlrikRr</name>
-        </author>
-        <link href="https://alrikrr.github.io/tp-link-ac750-wifi-router/"/>
-        <id>https://alrikrr.github.io/tp-link-ac750-wifi-router/</id>
-        <media:content url="https://alrikrr.github.io/media/posts/11/iot.jpg" medium="image" />
-            <category term="IoT Hacking"/>
-
-        <updated>2023-08-15T20:43:21-04:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://alrikrr.github.io/media/posts/11/iot.jpg" alt="" />
-                    Improper handling of electronic components can lead to component destruction Here is my LinkedIn post related to this article : LinkedIn-Post&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alrikrr.github.io/media/posts/11/iot.jpg" class="type:primaryImage" alt="" /></p>
-                <p class="alert alert-danger msg msg--warning"><strong>Improper handling of electronic components can lead to component destruction</strong></p>
-<p class="alert alert-info msg msg--warning"><strong>Here is my LinkedIn post related to this article : <a href="https://www.linkedin.com/feed/update/urn:li:activity:6978797904089989120/">LinkedIn-Post</a></strong></p>
-<hr>
-<h1 id="what-you-need">What you need</h1>
-<p>Here are all the tools you need to perform this kind of IoT Assessment on a device. For my part I didn’t have my soldering kit so I did it without but it was not very stable.</p>
-<ul>
-<li>Basic knowledge on UART ad IOT Hacking</li>
-<li>UART Bridge (Simple USB or Flipper Zero)</li>
-<li>Multimeter</li>
-<li>Cables</li>
-<li>Solder Iron (Optionnal)</li>
-<li>UART Device like Wifi Router</li>
-</ul>
-<h2 id="uart-">UART ?</h2>
-<p>If you are not familiar with UART ports, I would recommend you to check my article on Flipper-Zero Section <strong><a href="https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/" target="_blank" rel="noopener noreferrer">UART USB Bridge</a></strong></p>
-<p>If this is not enough, check out this video of FlashBack-Team <a href="https://youtu.be/01mw0oTHwxg">Hacker’s Guide to UART Root Shells</a></p>
-<h1 id="tp-link-ac750">TP-Link AC750</h1>
-<h2 id="informations">Informations</h2>
-<p>The device I used was a <a href="https://www.tp-link.com/ca/home-networking/wifi-router/archer-c20/">TP-Link Wifi Router AC750</a></p>
-<ul>
-<li>Supports 802.11ac standard - the next generation of Wi-Fi</li>
-<li>Simultaneous 2.4GHz 300Mbps and 5GHz 433Mbps connections for 733Mbps of total available bandwidth</li>
-<li>3 external antennas provide stable omnidirectional signal and superior wireless coverage</li>
-</ul>
-<p>While doing OSINT on the device, you can easly found internal and externl picture of it.</p>
-<ul>
-<li><a href="https://fccid.io/TE7C20">https://fccid.io/TE7C20</a></li>
-<li><a href="https://fccid.io/TE7C20/Internal-Photos/Internal-Photos-2582175">Internal Pictures</a></li>
-</ul>
-<p>Each WIFI device has a FCC ID which is very usefull to search specs and internal pictures.</p>
-<h2 id="uart-port">UART port</h2>
-<p>I was lucky on this one since the UART ports are labeled, so no need to test them with multimeter</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/uart-port.png" alt="Uart port" data-is-external-image="true"></p>
-<h2 id="components">Components</h2>
-<ul>
-<li>Wifi Chip - MT7628an
-<ul>
-<li><a href="http://vonger.cn/upload/MT7628_Full.pdf">Datasheet</a></li>
-</ul>
-</li>
-<li>DDR SDRAM - M14D5121632A
-<ul>
-<li><a href="https://www.endrich.com/fm/2/M14D5121632A-2.5BG2K.pdf">Datasheet</a></li>
-</ul>
-</li>
-<li>Wifi Chip - MT7610EN
-<ul>
-<li><a href="https://datasheetspdf.com/pdf/851068/Ralink/MT7610EN/1">Datasheet</a></li>
-</ul>
-</li>
-<li>Flash - 25Q64CSIG (Back of the PCB)
-<ul>
-<li><a href="https://www.alldatasheet.com/view_datasheet.jsp?Searchword=25Q64CSIG&amp;sField=1">Datasheet</a></li>
-</ul>
-</li>
-</ul>
-<h2>UART Bridge USB</h2>
-<p>Here is what my setup looks like. Like you can see I didn’t use any soldering Iron because I didn’t have one during this time.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/uart-bridge.png" alt="UART Bridge" data-is-external-image="true"></p>
-<p>The UART bridge is very simple, here is a small schemas :</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/plan.png" alt="Plan" data-is-external-image="true"></p>
-<p>I’ll recommand you to check my post about this part : <a href="https://alrikrr.github.io/flipperzero-uart-bridge-rpi4-to-flipper/" target="_blank" rel="noopener noreferrer">UART USB Bridge</a></p>
-<p>Using <code>minicom</code> we can get a shell once the device is powered on !</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/2_filesystem.png" alt="FileSystem" data-is-external-image="true"></p>
-<h1 id="shell-and-enumeration">Shell and Enumeration</h1>
-<p>Let’s start the enumeration part on the device.<br>Just for the context I didn’t have any password for this Wifi router, SSID passwords and Admin Web password.</p>
-<p>The system is on read only so we can’t edit anything unfortunatly.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/9_readonly_fs.png" alt="Read Only FS" data-is-external-image="true"></p>
-<h2 id="etcpasswd">/etc/passwd</h2>
-<p>The first goodies we can get is the users and the passwords of the system.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/3_etcpasswd.png" alt="etc passwd" data-is-external-image="true"></p>
-<p>The admin user has its hash on the passwd file and is easly crackable</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/8_crack_admin_linux.png" alt="Crack Admin" data-is-external-image="true"></p>
-<ul>
-<li><code>admin:1234</code> –&gt; root account</li>
-</ul>
-<p>We can guess that there is a dropbear for SSH Service because of the username but also during the boot of the device, it geneate new RSA keys.</p>
-<h2 id="device-information">Device information</h2>
-<p>During my enumeration I could find more precise information about the device.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/13_router_info.png" alt="DeviceInfo" data-is-external-image="true"></p>
-<h2 id="ssid-password">SSID Password</h2>
-<p>After a while I was able to locate the SSID information and retreive the passwords.</p>
-<p>Here is the PATH where to find the password stored in clear text : <img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/16_location_passwords_ap.png" alt="PathPassword" data-is-external-image="true"></p>
-<p>Here is the default SSID password which is <code>12345678</code>, classic.<br><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/14_default_AP_password.png" alt="DefaultPassword" data-is-external-image="true"></p>
-<p>And finally the Password of the SSID that is currently in use on the device.<br><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/15_inuse_AP_password.png" alt="SSIDPassword" data-is-external-image="true"></p>
-<h2>Admin Panel</h2>
-<p>Since I now have access to the Wifi network I can now get access to the Admin Panel but unfortunatly I need to find a way to grab the admin password !</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/iot-hacking/tplink-ac750/6_login_http.png" alt="SSIDPassword" data-is-external-image="true"></p>
-<p>Next time i’ll dig into the admin panel and find maybe a way to get inside (Hardcoded password ?)</p>
-<p>See ya !</p>
             ]]>
         </content>
     </entry>

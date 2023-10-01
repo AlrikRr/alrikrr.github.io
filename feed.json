@@ -10,6 +10,22 @@
     },
     "items": [
         {
+            "id": "https://alrikrr.github.io/1-gba-sp-battery-change/",
+            "url": "https://alrikrr.github.io/1-gba-sp-battery-change/",
+            "title": "#1 GBA SP - Battery Change",
+            "summary": "Hello, everyone! I hope you're doing well? Today, I'm bringing you a series of articles that will gradually appear on&hellip;",
+            "content_html": "\n  <p>\n    Hello, everyone! I hope you're doing well?<br><br>Today, I'm bringing you a series of articles that will gradually appear on my blog. These articles will revolve around the modification of my Gameboy Advance SP, which I recently rediscovered among my belongings! This little gem is now 20 years old and still works fairly well, with not too much damage.<br>\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://alrikrr.github.io/media/posts/35/gba-1.jpeg\" height=\"2048\" width=\"1536\" alt=\"\"  sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://alrikrr.github.io/media/posts/35/responsive/gba-1-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-1-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-1-md.jpeg 768w\">\n      \n    </figure>\n\n  <p>\n    Unfortunately, this beauty is showing some signs of wear and tear and isn't quite up to modern standards. That's why I'm planning to implement some modifications such as:\n  </p>\n\n  <p>\n    - A new battery<br>- New protective shells<br>- A new IPS screen<br>- USB-C connection for charging<br>- Sound amplification<br>\n  </p>\n\n    <h1 id=\"new-battery\">\n      🔋 New Battery\n    </h1>\n\n  <p>\n    I'm kicking off this series of articles with something simple – the replacement of the original battery. After 20 years of use, I currently get about 2 hours of battery life, which is actually quite impressive. They don't make them like this anymore!<br>\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://alrikrr.github.io/media/posts/35/gba-2.jpeg\" height=\"2048\" width=\"1536\" alt=\"\"  sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://alrikrr.github.io/media/posts/35/responsive/gba-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-2-md.jpeg 768w\">\n      \n    </figure>\n\n  <p>\n    The new one is coming from&nbsp;<a href=\"https://www.retromodding.com/\" target=\"_blank\">Retro Modding</a>&nbsp;, its a 900 mAh battery, here is the link if you are interested :&nbsp;\n  </p>\n\n  <p>\n    <a href=\"https://www.retromodding.com/products/makho-game-boy-advance-sp-battery?variant=36494280982684\" target=\"_blank\">-&nbsp;https://www.retromodding.com/products/makho-game-boy-advance-sp-battery?variant=36494280982684</a>\n  </p>\n\n  <p>\n    It's coming with a pretty nice 3D printed shell and a + - contact PCB, already soldered to the battery. You can compare it with the old one on the top.\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://alrikrr.github.io/media/posts/35/gba-3.jpeg\" height=\"2048\" width=\"1536\" alt=\"\"  sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://alrikrr.github.io/media/posts/35/responsive/gba-3-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-3-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-3-md.jpeg 768w\">\n      \n    </figure>\n\n  <p>\n    The battery itself fits perfectly within the GBA SP, and when it comes to the incoming parts like the Clear White Shell module, it's going to look fantastic! 🎮👌\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://alrikrr.github.io/media/posts/35/gba-4.jpeg\" height=\"2048\" width=\"1536\" alt=\"\"  sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://alrikrr.github.io/media/posts/35/responsive/gba-4-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-4-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-4-md.jpeg 768w\">\n      \n    </figure>\n\n  <p>\n    The next step is to purchase a soldering iron, the IPS screen, and the protective shell. 🛠️\n  </p>",
+            "image": "https://alrikrr.github.io/media/posts/35/Retro-Gaming2.png",
+            "author": {
+                "name": "AlrikRr"
+            },
+            "tags": [
+                   "Retro Modding"
+            ],
+            "date_published": "2023-10-01T13:53:41-04:00",
+            "date_modified": "2023-10-01T14:20:51-04:00"
+        },
+        {
             "id": "https://alrikrr.github.io/invalide-device-flipperzero-repair/",
             "url": "https://alrikrr.github.io/invalide-device-flipperzero-repair/",
             "title": "Invalid Device - FlipperZero Repair ",
@@ -157,22 +173,6 @@
             ],
             "date_published": "2023-04-05T21:47:00-04:00",
             "date_modified": "2023-08-15T21:47:43-04:00"
-        },
-        {
-            "id": "https://alrikrr.github.io/my-crts-feedback/",
-            "url": "https://alrikrr.github.io/my-crts-feedback/",
-            "title": "My CRTS Feedback",
-            "summary": "Hello everyone, Happy New Year ! This is actually my first post of 2023 and nothing better than to tell&hellip;",
-            "content_html": "<div>Hello everyone, Happy New Year !</div>\n<div>This is actually my first post of 2023 and nothing better than to tell you about a certification I just completed. </div>\n<h1>What's CRTS ?</h1>\n<div>\n<div>CRTS or Certified Red Team Specialist from<a href=\"https://www.cyberwarfare.live/\" target=\"_blank\" rel=\"noopener noreferrer\"> Cyber Warfare</a> is a Technical Certification designed to improve your Red Team skills in many Offensive Fields. Your goal is to compromise an entire lab including 4 different networks !</div>\n<br>\n<div>You must use one of three attack paths to do this. Here is a picture of the internal lab.</div>\n<div><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://alrikrr.github.io/media/posts/4/crts-lab.png\" alt=\"\" width=\"2560\" height=\"1440\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://alrikrr.github.io/media/posts/4/responsive/crts-lab-xs.png 300w ,https://alrikrr.github.io/media/posts/4/responsive/crts-lab-sm.png 480w ,https://alrikrr.github.io/media/posts/4/responsive/crts-lab-md.png 768w\"></figure></div>\n<a href=\"https://www.cyberwarfare.live/courses/certified-red-team-specialist\" target=\"_blank\" rel=\"noopener noreferrer\">Certification Link</a></div>\n<div> </div>\n<div>\n<div>The bunbdle I took (30 days access) comes with VPN access of the internal lab, three PDF write-up for each attack path, digital badge and certification. 30 days is the minimum time, you can extend your lab time if you want.</div>\n<h1>My Experience</h1>\n<p>Well, this certification turned out to be quite a surprise for me. Initially, I wasn't expecting much beyond a simple lab, and then it transformed into an incredibly engaging experience. The internal lab setup was so well-done that I found it truly enjoyable!<br><br>You have the freedom to choose any attack path you prefer. I went with the first one, which involves a Web attack. Once you compromise the web server, you're required to pivot into another internal Active Directory network. Once you compromise the domain, you're faced with yet another pivot to an internal Active Directory network linked through a Trust Forest design. Let me tell you, after completing this lab, I became a pro at pivoting and post-exploitation on Active Directory!<br><br>The cherry on top is gaining access to a complete SCADA network – personally, that was the most satisfying reward for me!<br><br>And don't forget about the attack on Kubernetes and Docker containers; it's a fascinating aspect since you don't often get to play around with them in real pentesting engagements!</p>\n<h1>Worth It ?</h1>\n<div>I would recommend starting with a solid methodology and having a prior taste of penetration testing and Red Team skills. Relying solely on the WriteUps provided by Cyberwarfare won't cut it, as it's not always 100% detailed and might not explain every command required to reach the final objective. Consider the WriteUps as an emergency toolkit for when you're stuck!<br><br>In my case, I followed my instincts for the initial attack path. When I hit roadblocks, I turned to the writeup, especially for machines that I wasn't particularly comfortable with, like the Kubernetes (K8S) and the intensive pivoting parts.</div>\n<p> </p>\n</div>",
-            "image": "https://alrikrr.github.io/media/posts/4/my-crts.jpg",
-            "author": {
-                "name": "AlrikRr"
-            },
-            "tags": [
-                   "Updates"
-            ],
-            "date_published": "2023-01-19T19:09:00-05:00",
-            "date_modified": "2023-08-15T19:10:06-04:00"
         }
     ]
 }

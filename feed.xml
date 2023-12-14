@@ -3,12 +3,122 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2023-10-01T14:20:51-04:00</updated>
+    <updated>2023-12-14T18:44:58-05:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
     <id>https://alrikrr.github.io</id>
 
+    <entry>
+        <title>InCyber Forum International North America 2023</title>
+        <author>
+            <name>AlrikRr</name>
+        </author>
+        <link href="https://alrikrr.github.io/incyber-forum-international-cyber-2023/"/>
+        <id>https://alrikrr.github.io/incyber-forum-international-cyber-2023/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/36/update-banner-new.png" medium="image" />
+            <category term="Updates"/>
+
+        <updated>2023-12-14T18:44:58-05:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://alrikrr.github.io/media/posts/36/update-banner-new.png" alt="" />
+                    Yes, I know this post is coming a bit late, but I had to get it out anyway. I had&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://alrikrr.github.io/media/posts/36/update-banner-new.png" class="type:primaryImage" alt="" /></p>
+                
+  <p>
+    Yes, I know this post is coming a bit late, but I had to get it out anyway.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/36/bn.jpeg" height="378" width="1026" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/36/responsive/bn-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/36/responsive/bn-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/36/responsive/bn-md.jpeg 768w">
+      
+    </figure>
+
+    <h1 id="my-first-talk">
+      My First Talk
+    </h1>
+
+  <p>
+    I had the opportunity to present this year at FIC North America in Montreal, focusing on the latest developments in the Hacking Lab, a specialized stage in offensive security! It was my first presentation and, moreover, it was in English!
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/36/bn_link-2.jpeg" height="350" width="1400" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/36/responsive/bn_link-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/36/responsive/bn_link-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/36/responsive/bn_link-2-md.jpeg 768w">
+      
+    </figure>
+
+  <p>
+    Thanks, Dorota, for the pictures! :D
+  </p>
+
+  <p>
+    My presentation aimed to discuss hardware hacking on embedded systems, a topic I find fascinating even though it's not my specialty. Who knows, maybe in the future? My talk was very geared towards those who want to embark on the adventure, providing the basics and the necessary equipment to gain shell access to a device. During this presentation, I used an old TP-Link router as an example, connecting to the URAT port to gain access. My Flipper Zero was useful for creating a USB to UART bridge.
+  </p>
+
+  <p>
+    Besides my presentation, it was a very interesting event. I had the chance to meet up with my cyber friends and make new ones!<br>
+  </p>
+
+    <h2 id="resourcesandnbsp">
+      Resources&nbsp;
+    </h2>
+
+  <p>
+    Don't hesitate to download the slides, available here : <a href="https://github.com/AlrikRr/Talks" target="_blank">Github-AlrikRr-Talks&nbsp;</a>
+  </p>
+
+  <p>
+    The videos are also available here : <a href="https://youtu.be/YebuNIlfjYY?si=gEnqG4UpJAKrrrMK" target="_blank">Hardware Hacking - Playlist</a>
+  </p>
+<div><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/YebuNIlfjYY?si=5SpRpAU-e_yghOxf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+
+  <p>
+    Unfortunately, the presentation wasn't recorded, but it won't be the last for those who&nbsp;like to attend.
+  </p>
+
+    <h1 id="hacker-without-borders">
+      Hacker Without Borders
+    </h1>
+
+  <p>
+    I discovered the NGO Hacker Without Borders and spoke with their representatives. I applied in the evening, now I just have to wait for the North America chapter to open its doors to embark on the adventure!
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/36/fine-2.jpeg" height="1024" width="887" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/36/responsive/fine-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/36/responsive/fine-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/36/responsive/fine-2-md.jpeg 768w">
+      
+    </figure>
+
+    <h1 id="thanks">
+      Thanks !
+    </h1>
+
+  <p>
+    I would like to thank Vincent Rioux once again for the invitation to present this year! As I mentioned, it was my first presentation, and it was intense—the room was packed! Thank you to those who attended the presentation. It won't be the last; I have other topics in mind to share with you.
+  </p>
+
+    <h2 id="linkedin-related-posts">
+      LinkedIn Related Posts
+    </h2>
+<div><div class="post__iframe"><iframe loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7119702686660222976" height="439" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe></div></div>
+
+  <p>
+    <a href="https://www.linkedin.com/posts/adrien-lasalle_fic-fic-forumcyber-activity-7123437004209426432-ubnS?utm_source=share&amp;utm_medium=member_desktop" target="_blank">FIC FeedBack !&nbsp;</a>
+  </p>
+<div><div class="post__iframe"><iframe loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7122279607260565507" height="421" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe></div></div>
+<div><div class="post__iframe"><iframe loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7124787293256609792" height="355" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe></div></div>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>#1 GBA SP - Battery Change</title>
         <author>
@@ -555,43 +665,6 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/5-flag/punk2.png" alt="Flag 5 " data-is-external-image="true"></p>
 <h1 id="flag-5">Flag 5</h1>
 <p>The flag is <code>FLAG-KLJV490uhkEJF28</code></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>#1 Nsec21 - Welcome</title>
-        <author>
-            <name>AlrikRr</name>
-        </author>
-        <link href="https://alrikrr.github.io/1-nsec21-welcome/"/>
-        <id>https://alrikrr.github.io/1-nsec21-welcome/</id>
-        <media:content url="https://alrikrr.github.io/media/posts/21/nsec-Badge.jpg" medium="image" />
-            <category term="Write Up"/>
-            <category term="BadgeLife"/>
-
-        <updated>2023-08-15T21:47:43-04:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://alrikrr.github.io/media/posts/21/nsec-Badge.jpg" alt="" />
-                    Hello everyone ! It’s been a while since my last post but I’m still alive no worries 😁 Today I’m&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alrikrr.github.io/media/posts/21/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
-                <p>Hello everyone ! It’s been a while since my last post but I’m still alive no worries 😁</p>
-<p>Today I’m gonna post some write-up for the NorthSec 2021 Badge CTF ! I purchase the badge last year and din’t have time to play with it so here I am !<br>It’s actually my first CTF Badge and I hope im going to fine all the flags !</p>
-<h1 id="device">Device</h1>
-<p>Here is a full spec of the nsec badge : <a href="https://github.com/nsec/nsec-badge">available here</a></p>
-<p>Here is the Badge in the front<br><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/1-flag/badge-1.png" alt="Badge Face" data-is-external-image="true"></p>
-<p>and here is the back of the badge<br><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/1-flag/badge-2.png" alt="Badge Back" data-is-external-image="true"></p>
-<p>This one is very cool, good job for Nsec Team !</p>
-<h1 id="welcome-flag">Welcome Flag</h1>
-<p>Well at least I found 1 flag so far which is the Welcome Flag ! This one is available on top of the entrance inside this chest.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/1-flag/flag-1.png" alt="flag 1" data-is-external-image="true"></p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/1-flag/welcome-flag.png" alt="Welcome Flage" data-is-external-image="true"></p>
-<h1 id="flag">Flag</h1>
-<p>Flag 1 : <code>FLAG-W3lc0m2NSECxx</code></p>
             ]]>
         </content>
     </entry>

@@ -2,7 +2,7 @@
 						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-					})(window,document,'script','dataLayer','G-22SHFE01F3');</script><link rel="stylesheet" href="https://alrikrr.github.io/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://alrikrr.github.io/binary-13-linux-ret2libx-32bits/"><link rel="alternate" type="application/atom+xml" href="https://alrikrr.github.io/feed.xml"><link rel="alternate" type="application/json" href="https://alrikrr.github.io/feed.json"><meta property="og:title" content="#Binary 1.3 - Linux ret2libx 32bits"><meta property="og:image" content="https://alrikrr.github.io/media/posts/15/ret2libc.png"><meta property="og:image:width" content="1920"><meta property="og:image:height" content="1095"><meta property="og:site_name" content="AlrikRr's Blog"><meta property="og:description" content="ret2libc ? This is a flaw that we will exploit on a binary that has the NX (non-executable) protection enabled."><meta property="og:url" content="https://alrikrr.github.io/binary-13-linux-ret2libx-32bits/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@alrikrr"><meta name="twitter:title" content="#Binary 1.3 - Linux ret2libx 32bits"><meta name="twitter:description" content="ret2libc ? This is a flaw that we will exploit on a binary that has the NX (non-executable) protection enabled."><meta name="twitter:image" content="https://alrikrr.github.io/media/posts/15/ret2libc.png"><link rel="shortcut icon" href="https://alrikrr.github.io/media/website/android-chrome-192x192.png" type="image/x-icon"><link rel="stylesheet" href="https://alrikrr.github.io/assets/css/fontawesome-all.min.css?v=bbcde81f26378440dac4c3d195714389"><link rel="stylesheet" href="https://alrikrr.github.io/assets/css/style.css?v=9b43267d2b7457feeb36a64550d71700"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://alrikrr.github.io/binary-13-linux-ret2libx-32bits/"},"headline":"#Binary 1.3 - Linux ret2libx 32bits","datePublished":"2020-09-15T20:58","dateModified":"2023-08-15T21:04","image":{"@type":"ImageObject","url":"https://alrikrr.github.io/media/posts/15/ret2libc.png","height":1095,"width":1920},"description":"ret2libc ? This is a flaw that we will exploit on a binary that has the NX (non-executable) protection enabled.","author":{"@type":"Person","name":"AlrikRr","url":"https://alrikrr.github.io/authors/alrikrr/"},"publisher":{"@type":"Organization","name":"AlrikRr"}}</script><noscript><style>img[loading] {
+					})(window,document,'script','dataLayer','G-22SHFE01F3');</script><link rel="stylesheet" href="https://alrikrr.github.io/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://alrikrr.github.io/binary-13-linux-ret2libx-32bits/"><link rel="alternate" type="application/atom+xml" href="https://alrikrr.github.io/feed.xml"><link rel="alternate" type="application/json" href="https://alrikrr.github.io/feed.json"><meta property="og:title" content="#Binary 1.3 - Linux ret2libx 32bits"><meta property="og:image" content="https://alrikrr.github.io/media/posts/15/ret2libc.png"><meta property="og:image:width" content="1920"><meta property="og:image:height" content="1095"><meta property="og:site_name" content="AlrikRr's Blog"><meta property="og:description" content="ret2libc ? This is a flaw that we will exploit on a binary that has the NX (non-executable) protection enabled."><meta property="og:url" content="https://alrikrr.github.io/binary-13-linux-ret2libx-32bits/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@alrikrr"><meta name="twitter:title" content="#Binary 1.3 - Linux ret2libx 32bits"><meta name="twitter:description" content="ret2libc ? This is a flaw that we will exploit on a binary that has the NX (non-executable) protection enabled."><meta name="twitter:image" content="https://alrikrr.github.io/media/posts/15/ret2libc.png"><link rel="shortcut icon" href="https://alrikrr.github.io/media/website/android-chrome-192x192.png" type="image/x-icon"><link rel="stylesheet" href="https://alrikrr.github.io/assets/css/fontawesome-all.min.css?v=bbcde81f26378440dac4c3d195714389"><link rel="stylesheet" href="https://alrikrr.github.io/assets/css/style.css?v=9c9d2fbfcab8b79b8c58630080d7437a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://alrikrr.github.io/binary-13-linux-ret2libx-32bits/"},"headline":"#Binary 1.3 - Linux ret2libx 32bits","datePublished":"2020-09-15T20:58","dateModified":"2023-08-15T21:04","image":{"@type":"ImageObject","url":"https://alrikrr.github.io/media/posts/15/ret2libc.png","height":1095,"width":1920},"description":"ret2libc ? This is a flaw that we will exploit on a binary that has the NX (non-executable) protection enabled.","author":{"@type":"Person","name":"AlrikRr","url":"https://alrikrr.github.io/authors/alrikrr/"},"publisher":{"@type":"Organization","name":"AlrikRr"}}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript></head><body class="is-preload"><div id="wrapper"><div id="main"><div class="inner"><header id="header"><a class="logo" href="https://alrikrr.github.io/"><strong>AlrikRr&#x27;s Blog</strong></a><ul class="icons"><li><a href="https://twitter.com/AlrikRr" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://www.linkedin.com/in/adrien-lasalle/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li><li><a href="https://www.youtube.com/channel/UCHUrf2NqybwOFQ6tfYt3zNA" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2020-09-15T20:58" class="post__date">15 September 2020</time><h1>#Binary 1.3 - Linux ret2libx 32bits</h1></header><figure class="image main"><img src="https://alrikrr.github.io/media/posts/15/ret2libc.png" srcset="https://alrikrr.github.io/media/posts/15/responsive/ret2libc-xs.png 300w, https://alrikrr.github.io/media/posts/15/responsive/ret2libc-sm.png 480w, https://alrikrr.github.io/media/posts/15/responsive/ret2libc-md.png 768w, https://alrikrr.github.io/media/posts/15/responsive/ret2libc-lg.png 1024w, https://alrikrr.github.io/media/posts/15/responsive/ret2libc-xl.png 1360w, https://alrikrr.github.io/media/posts/15/responsive/ret2libc-xxl.png 1600w" sizes="(max-width: 1600px) 100vw, 1600px" loading="lazy" height="1095" width="1920" alt=""></figure><div class="post__inner post__entry"><h1 id="ret2libc-">ret2libc ?</h1><p>This is a flaw that we will exploit on a binary that has the NX (non-executable) protection enabled.</p><p><img loading="lazy" src="https://alrikrr.github.io/posts/reverse-engineering/binary-exploitation/ret-2-libc/6-checksec.png" alt="6-checksec.png" data-is-external-image="true"></p><p>There are several ways to bypass this protection (ROP, ret2plt, etc…) but here we will focus on <strong>ret2libc</strong>.</p><p>In our program, <strong>the stack is not executable</strong> but the <strong>libc</strong> contains many interesting functions and it is <strong>executable</strong>.</p><p>The idea is to go <strong>look for the functions</strong> that interest us in order to build an exploit.</p><p>For example, to make a <code>/bin/sh</code> shell we’ll need :</p><ul><li>the address of the <code>system()</code> function to execute a shell command.</li><li>the address of the <code>exit()</code> function to exit our exploit cleanly.</li><li>the address of a <code>/bin/sh</code> string to tell the system function what to run.</li></ul><p>Alright, let’s go!</p><h1 id="code">Code</h1><p>Here is the C program that we will use:</p><div class="highlight"><pre tabindex="0"><code class="language-C hljs" data-lang="C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span></span> <span class="hljs-meta"><span class="hljs-meta-string">&lt;string.h&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span></span> <span class="hljs-meta"><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
@@ -58,6 +58,7 @@ payload = padding + system + exit + binsh
         configTTL: parseInt(document.querySelector('.pcb').getAttribute('data-config-ttl'), 10),
         debugMode: document.querySelector('.pcb').getAttribute('data-debug-mode') === 'true',
         initialState: null,
+        initialLsState: null,
         previouslyAccepted: []
     };
 
@@ -124,10 +125,60 @@ payload = padding + system + exit + binsh
                 console.log('🍪 Config not found, or configuration expired');
             }
 
+            if (window.publiiCBGCM) {
+                gtag('consent', 'default', {
+                    'ad_storage': window.publiiCBGCM.defaultState.ad_storage ? 'granted' : 'denied',
+                    'ad_personalization': window.publiiCBGCM.defaultState.ad_personalization ? 'granted' : 'denied',
+                    'ad_user_data': window.publiiCBGCM.defaultState.ad_user_data ? 'granted' : 'denied',
+                    'analytics_storage': window.publiiCBGCM.defaultState.analytics_storage ? 'granted' : 'denied',
+                    'personalization_storage': window.publiiCBGCM.defaultState.personalization_storage ? 'granted' : 'denied',
+                    'functionality_storage': window.publiiCBGCM.defaultState.functionality_storage ? 'granted' : 'denied',
+                    'security_storage': window.publiiCBGCM.defaultState.security_storage ? 'granted' : 'denied'
+                });  
+                
+                if (cbConfig.debugMode) {
+                    console.log('🍪 GCMv2 DEFAULT STATE: ' + JSON.stringify({
+                        'ad_storage': window.publiiCBGCM.defaultState.ad_storage ? 'granted' : 'denied',
+                        'ad_personalization': window.publiiCBGCM.defaultState.ad_personalization ? 'granted' : 'denied',
+                        'ad_user_data': window.publiiCBGCM.defaultState.ad_user_data ? 'granted' : 'denied',
+                        'analytics_storage': window.publiiCBGCM.defaultState.analytics_storage ? 'granted' : 'denied',
+                        'personalization_storage': window.publiiCBGCM.defaultState.personalization_storage ? 'granted' : 'denied',
+                        'functionality_storage': window.publiiCBGCM.defaultState.functionality_storage ? 'granted' : 'denied',
+                        'security_storage': window.publiiCBGCM.defaultState.security_storage ? 'granted' : 'denied'
+                    }));
+                }
+            }
+
             showBanner();
         } else if (typeof currentConfig === 'string') {
             if (cbConfig.debugMode) {
                 console.log('🍪 Config founded');
+            }
+
+            cbConfig.initialLsState = currentConfig.split(',');
+
+            if (window.publiiCBGCM) {
+                gtag('consent', 'default', {
+                    'ad_storage': getDefaultConsentState(currentConfig, 'ad_storage'),
+                    'ad_personalization': getDefaultConsentState(currentConfig, 'ad_personalization'),
+                    'ad_user_data': getDefaultConsentState(currentConfig, 'ad_user_data'),
+                    'analytics_storage': getDefaultConsentState(currentConfig, 'analytics_storage'),
+                    'personalization_storage': getDefaultConsentState(currentConfig, 'personalization_storage'),
+                    'functionality_storage': getDefaultConsentState(currentConfig, 'functionality_storage'),
+                    'security_storage': getDefaultConsentState(currentConfig, 'security_storage')
+                });
+                
+                if (cbConfig.debugMode) {
+                    console.log('🍪 GCMv2 DEFAULT STATE: ' + JSON.stringify({
+                        'ad_storage': getDefaultConsentState(currentConfig, 'ad_storage'),
+                        'ad_personalization': getDefaultConsentState(currentConfig, 'ad_personalization'),
+                        'ad_user_data': getDefaultConsentState(currentConfig, 'ad_user_data'),
+                        'analytics_storage': getDefaultConsentState(currentConfig, 'analytics_storage'),
+                        'personalization_storage': getDefaultConsentState(currentConfig, 'personalization_storage'),
+                        'functionality_storage': getDefaultConsentState(currentConfig, 'functionality_storage'),
+                        'security_storage': getDefaultConsentState(currentConfig, 'security_storage')
+                    }));
+                }
             }
 
             showBadge();
@@ -179,6 +230,25 @@ payload = padding + system + exit + binsh
         }
 
         return false;
+    }
+
+    function getDefaultConsentState (currentConfig, consentGroup) {
+        let configGroups = currentConfig.split(',');
+
+        for (let i = 0; i < configGroups.length; i++) {
+            let groupName = configGroups[i];
+            let group = window.publiiCBGCM.groups.find(group => group.cookieGroup === groupName);
+
+            if (group && group[consentGroup]) {
+                return 'granted';
+            }
+        }  
+        
+        if (window.publiiCBGCM.defaultState[consentGroup]) {
+            return 'granted'; 
+        }
+        
+        return 'denied';
     }
 
     function initBannerEvents () {
@@ -287,6 +357,30 @@ payload = padding + system + exit + binsh
 
         if (cbConfig.debugMode) {
             console.log('🍪 Allowed group: ' + allowedGroup);
+        }
+
+        if (window.publiiCBGCM && cbConfig.initialLsState.indexOf(allowedGroup) === -1) {
+            let consentResult = {};
+            let group = window.publiiCBGCM.groups.find(group => group.cookieGroup === allowedGroup);
+
+            if (group) {
+                let foundSomeConsents = false;
+
+                Object.keys(group).forEach(key => {
+                    if (key !== 'cookieGroup' && group[key] === true) {
+                        consentResult[key] = 'granted';
+                        foundSomeConsents = true;
+                    }
+                });
+
+                if (foundSomeConsents) {
+                    gtag('consent', 'update', consentResult);   
+
+                    if (cbConfig.debugMode) {
+                        console.log('🍪 GCMv2 UPDATE: ' + JSON.stringify(consentResult));
+                    }
+                }
+            }
         }
     }
 
@@ -511,7 +605,7 @@ payload = padding + system + exit + binsh
         for (var i = 0; i < groupsToCheck.length; i++) {
             var groupToCheck = groupsToCheck[i];
 
-            if (groupsToAccept.indexOf(groupToCheck) === -1) {
+            if (groupToCheck !== '' && groupsToAccept.indexOf(groupToCheck) === -1) {
                 if (cbConfig.debugMode) {
                     console.log('🍪 Reload is needed due lack of: ', groupToCheck);
                 }

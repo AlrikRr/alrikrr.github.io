@@ -3,7 +3,7 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2024-03-23T12:03:52-04:00</updated>
+    <updated>2024-03-23T14:25:46-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
@@ -32,7 +32,7 @@
                 <p>Are you tired of limited tokens and cloud-based AI models? Well, let me introduce Ollama!</p>
 <h1>What is ollama</h1>
 <p>Ollama is a tool that will allow you to run a wide variety of open-source large language models (LLMs) directly on your local machine, without the need for any subscription or internet access (except for downloading the tool and the models, of course! :D ).</p>
-<p>For now, it is only compatible with Linux and MacOS, but I'm sure the Windows version is on the way. Here is the website link if you are curious: <a href="https://ollama.com/download">https://ollama.com/download</a> </p>
+<p>For now, it is only compatible with Linux and MacOS,  the Windows one is on the way with a "Preview" version. Here is the website link if you are curious: <a href="https://ollama.com/download">https://ollama.com/download</a> </p>
 <p>Oh! If you really want to install it (kind of) on your Windows machine, I can recommend you the video of Network Chuck, <a href="https://www.youtube.com/watch?v=WxYC9-hBM_g" target="_blank" rel="noopener noreferrer">where he installs Ollama using WSL</a>!</p>
 <p>Before doing anything, it's important to note that depending on the machine you'll run your models on, the waiting time can be long. On my side, I'm using a MacBook Air M2 with 8GB RAM (Don't judge me here), and for a simple question, it can take 15 to 20 seconds. For example, if I ask for a quote from The Office, it will take around 30-40 seconds.</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/theoffice.gif" alt="" width="200" height="167"></figure>

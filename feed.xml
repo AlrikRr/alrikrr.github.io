@@ -3,12 +3,87 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2023-12-16T11:18:07-05:00</updated>
+    <updated>2024-03-23T12:03:52-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
     <id>https://alrikrr.github.io</id>
 
+    <entry>
+        <title>Ollama: Your Private AI</title>
+        <author>
+            <name>AlrikRr</name>
+        </author>
+        <link href="https://alrikrr.github.io/your-local-ai-chatgpt-like/"/>
+        <id>https://alrikrr.github.io/your-local-ai-chatgpt-like/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/37/tutorial-banner.jpg" medium="image" />
+            <category term="Tutorials"/>
+
+        <updated>2024-03-20T21:50:46-04:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://alrikrr.github.io/media/posts/37/tutorial-banner.jpg" alt="" />
+                    Are you tired of limited tokens and cloud-based AI models? Well, let me introduce Ollama! Ollama is a tool that&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://alrikrr.github.io/media/posts/37/tutorial-banner.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Are you tired of limited tokens and cloud-based AI models? Well, let me introduce Ollama!</p>
+<h1>What is ollama</h1>
+<p>Ollama is a tool that will allow you to run a wide variety of open-source large language models (LLMs) directly on your local machine, without the need for any subscription or internet access (except for downloading the tool and the models, of course! :D ).</p>
+<p>For now, it is only compatible with Linux and MacOS, but I'm sure the Windows version is on the way. Here is the website link if you are curious: <a href="https://ollama.com/download">https://ollama.com/download</a> </p>
+<p>Oh! If you really want to install it (kind of) on your Windows machine, I can recommend you the video of Network Chuck, <a href="https://www.youtube.com/watch?v=WxYC9-hBM_g" target="_blank" rel="noopener noreferrer">where he installs Ollama using WSL</a>!</p>
+<p>Before doing anything, it's important to note that depending on the machine you'll run your models on, the waiting time can be long. On my side, I'm using a MacBook Air M2 with 8GB RAM (Don't judge me here), and for a simple question, it can take 15 to 20 seconds. For example, if I ask for a quote from The Office, it will take around 30-40 seconds.</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/theoffice.gif" alt="" width="200" height="167"></figure>
+<blockquote>
+<p>System requirements for running models ; minimum of 8 GB of RAM is needed for 3B parameter models, 16 GB for 7B, and 32 GB for 13B models.</p>
+</blockquote>
+<h1><figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/8k2aku.gif" alt="" width="260" height="453"></figure></h1>
+<h1>REST API</h1>
+<p>Once Ollama is installed on your local machine, you'll notice that port number <code>11434</code> is open from your localhost IP. This port can be used to communicate directly using the curl command if you'd like. Here's an example:</p>
+<pre class="p1">curl -X POST http://localhost:11434/api/generate -d '{ "model": "llama2", "prompt":"Give me a quote from The Office" }'</pre>
+<p>It can be an interesting way to set up a local server on your home network and then access it from another machine. You can open that port to the internet (or via a VPN), and now you have your own ChatGPT accessible from anywhere!</p>
+<h1>Where to find my models</h1>
+<p>Ollama provides many different models that you can check on their website. They offer specialized coding models, medical models, uncensored ones, and more. It's up to you to choose which one suits your needs. Keep in mind that all the models are open-source and regularly updated by the community. New models can also emerge from time to time!</p>
+<p><a href="https://ollama.com/library">https://ollama.com/library</a> </p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/ai-meme.png" alt="" width="972" height="662" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/ai-meme-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/ai-meme-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/ai-meme-md.png 768w"></figure>
+<h1>How to install</h1>
+<p>The installation process is quite simple. All you need to do is follow the instructions on the website and download the application. Once the application is installed, you can open a terminal and type the command.</p>
+<pre>ollama</pre>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/ollama.png" alt="ollama cmd output" width="1114" height="776" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/ollama-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/ollama-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/ollama-md.png 768w"></figure>
+<h2>Install a model</h2>
+<p>If you want to install your first model, I recommend picking <code>llama2</code> and trying the following command:</p>
+<pre>ollama run llama2</pre>
+<p>Once the model is downloaded (around 4GB), you can use the same command to use it. And remember, you don't need internet access to use that AI!</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/adrien-llama2.png" alt="Aked who I am" width="2746" height="136" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/adrien-llama2-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/adrien-llama2-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/adrien-llama2-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/8k1yxh.jpg" alt="Just a silly meme" width="1400" height="350" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/8k1yxh-xs.jpg 300w ,https://alrikrr.github.io/media/posts/37/responsive/8k1yxh-sm.jpg 480w ,https://alrikrr.github.io/media/posts/37/responsive/8k1yxh-md.jpg 768w"></figure>
+<p>Well obviously, like most of the LLMs, double-check the information it is going to send you! :D If you have any doubts or uncertainties, it's always a good idea to verify the accuracy of the information using multiple sources.</p>
+<h2>Delete a model</h2>
+<p>Let's say you run out of storage space ( Its a Macbook user issue here ... ) Well, you'll probably need to delete all the models you downloaded from your local machine. Here is the command to list all your models:</p>
+<pre>ollama list</pre>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/list.png" alt="ollama list command" width="1080" height="214" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/list-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/list-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/list-md.png 768w"></figure>
+<p>Then delete them using this command: </p>
+<pre>ollama rm &lt;MODEL&gt;</pre>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/rm.png" alt="" width="1122" height="368" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/rm-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/rm-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/rm-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/8k2a1y.gif" alt="" width="260" height="260"></figure>
+<h1>Extra MacOS - Shortcut </h1>
+<p>Since I am an Apple user, the usage of a black terminal can hurt the sensibility of my fellow Apple comrade. So I built an easy and working Apple Shortcut, so you don't have to open a CMD every time you want to use Ollama.</p>
+<p>By the way, I am not a shortcut expert, so do not hesitate if you have a better one in your pocket; I would love to use it! :D</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/shortcut.png" alt="shortcut schematics" width="1242" height="846" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/shortcut-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/shortcut-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/shortcut-md.png 768w"></figure>
+<p>This shortcut will ask you a prompt, then give you the result in another alert box.</p>
+<p>If you need to switch models frequently, I can share another shortcut with you. This time, it includes a list that you may need to edit in order to have the right models inside.</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/short.png" alt="Shortcut multi models" width="1232" height="1134" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/short-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/short-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/short-md.png 768w"></figure>
+<p>Like the other one but this time you'll need to choose which model you are using from the prompt, quite fancy isn't it ?</p>
+<h1>Extra - WebUI</h1>
+<p>If you want something spicy, here is a Web UI for a more "ChatGPT immersion" where you can upload images, manage your session, keep a history... well, like the real ChatGPT website actually!</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/demo.gif" alt="" width="1920" height="1080"></figure>
+<p>You can check the github documentation for a simple install using docker:</p>
+<p><a href="https://github.com/open-webui/open-webui/tree/main">https://github.com/open-webui/open-webui/tree/main</a> </p>
+<p>On my side, I'm going to try that one very soon and will probably update this post or create a new one regarding the installation of the Web UI. Stay in touch!</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>InCyber Forum North America 2023</title>
         <author>
@@ -634,37 +709,6 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/7-flag/letter-t.png" alt="Sword" data-is-external-image="true"></p>
 <h1 id="flag">Flag</h1>
 <p>Here is the 7th Flag : <code>FLAG-Cl1F0rFun&amp;Pr0f1t</code></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>#5 Nsec21 - Punk Down</title>
-        <author>
-            <name>AlrikRr</name>
-        </author>
-        <link href="https://alrikrr.github.io/5-nsec21-punk-down/"/>
-        <id>https://alrikrr.github.io/5-nsec21-punk-down/</id>
-        <media:content url="https://alrikrr.github.io/media/posts/22/nsec-Badge.jpg" medium="image" />
-            <category term="Write Up"/>
-            <category term="BadgeLife"/>
-
-        <updated>2023-04-06T21:48:00-04:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://alrikrr.github.io/media/posts/22/nsec-Badge.jpg" alt="" />
-                    Okay for this one I don’t have the reference but I managed to found it by accident ! It’s actually&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alrikrr.github.io/media/posts/22/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
-                <p>Okay for this one I don’t have the reference but I managed to found it by accident ! It’s actually the second one I found during my journey.</p>
-<h1 id="punk-guy">Punk Guy</h1>
-<p>I was playing around the place and speak to this Punk Guy right here<br><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/5-flag/flag5.png" alt="Punk Guy" data-is-external-image="true"></p>
-<p>During the conversation, I found the flag by accident by pressing the Down Button <img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/5-flag/punk1.png" alt="Punk Guy" data-is-external-image="true"></p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/5-flag/punk2.png" alt="Flag 5 " data-is-external-image="true"></p>
-<h1 id="flag-5">Flag 5</h1>
-<p>The flag is <code>FLAG-KLJV490uhkEJF28</code></p>
             ]]>
         </content>
     </entry>

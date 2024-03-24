@@ -3,7 +3,7 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2024-03-23T14:25:46-04:00</updated>
+    <updated>2024-03-24T13:04:33-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
@@ -93,6 +93,7 @@
         <id>https://alrikrr.github.io/incyber-forum-international-cyber-2023/</id>
         <media:content url="https://alrikrr.github.io/media/posts/36/update-banner-new.png" medium="image" />
             <category term="Updates"/>
+            <category term="Talks"/>
 
         <updated>2023-12-16T10:13:00-05:00</updated>
             <summary>

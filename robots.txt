@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://alrikrr.github.io/sitemap.xml
+Sitemap: file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/sitemap.xml

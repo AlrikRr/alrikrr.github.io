@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>AlrikRr&#x27;s Blog</title>
-    <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/feed.xml" rel="self" />
-    <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview" />
+    <link href="https://alrikrr.github.io/feed.xml" rel="self" />
+    <link href="https://alrikrr.github.io" />
     <updated>2025-04-04T23:06:56-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
-    <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview</id>
+    <id>https://alrikrr.github.io</id>
 
     <entry>
         <title>Ollama: Your Private AI</title>
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/your-local-ai-chatgpt-like/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/your-local-ai-chatgpt-like/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/37/tutorial-banner.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/your-local-ai-chatgpt-like/"/>
+        <id>https://alrikrr.github.io/your-local-ai-chatgpt-like/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/37/tutorial-banner.jpg" medium="image" />
             <category term="Tutorials"/>
 
         <updated>2024-03-20T21:50:46-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/37/tutorial-banner.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/37/tutorial-banner.jpg" alt="" />
                     Are you tired of limited tokens and cloud-based AI models? Well, let me introduce Ollama! Ollama is a tool that&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/37/tutorial-banner.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/37/tutorial-banner.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Are you tired of limited tokens and cloud-based AI models? Well, let me introduce Ollama!</p>
 <h1>What is ollama</h1>
 <p>Ollama is a tool that will allow you to run a wide variety of open-source large language models (LLMs) directly on your local machine, without the need for any subscription or internet access (except for downloading the tool and the models, of course! :D ).</p>
 <p>For now, it is only compatible with Linux and MacOS,  the Windows one is on the way with a "Preview" version. Here is the website link if you are curious: <a href="https://ollama.com/download">https://ollama.com/download</a> </p>
 <p>Oh! If you really want to install it (kind of) on your Windows machine, I can recommend you the video of Network Chuck, <a href="https://www.youtube.com/watch?v=WxYC9-hBM_g" target="_blank" rel="noopener noreferrer">where he installs Ollama using WSL</a>!</p>
 <p>Before doing anything, it's important to note that depending on the machine you'll run your models on, the waiting time can be long. On my side, I'm using a MacBook Air M2 with 8GB RAM (Don't judge me here), and for a simple question, it can take 15 to 20 seconds. For example, if I ask for a quote from The Office, it will take around 30-40 seconds.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/theoffice.gif" alt="" width="200" height="167"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/theoffice.gif" alt="" width="200" height="167"></figure>
 <blockquote>
 <p>System requirements for running models ; minimum of 8 GB of RAM is needed for 3B parameter models, 16 GB for 7B, and 32 GB for 13B models.</p>
 </blockquote>
-<h1><figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/8k2aku.gif" alt="" width="260" height="453"></figure></h1>
+<h1><figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/8k2aku.gif" alt="" width="260" height="453"></figure></h1>
 <h1>REST API</h1>
 <p>Once Ollama is installed on your local machine, you'll notice that port number <code>11434</code> is open from your localhost IP. This port can be used to communicate directly using the curl command if you'd like. Here's an example:</p>
 <pre class="p1">curl -X POST http://localhost:11434/api/generate -d '{ "model": "llama2", "prompt":"Give me a quote from The Office" }'</pre>
@@ -47,37 +47,37 @@
 <h1>Where to find my models</h1>
 <p>Ollama provides many different models that you can check on their website. They offer specialized coding models, medical models, uncensored ones, and more. It's up to you to choose which one suits your needs. Keep in mind that all the models are open-source and regularly updated by the community. New models can also emerge from time to time!</p>
 <p><a href="https://ollama.com/library">https://ollama.com/library</a> </p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/ai-meme.png" alt="" width="972" height="662" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/ai-meme-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/ai-meme-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/ai-meme-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/ai-meme.png" alt="" width="972" height="662" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/ai-meme-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/ai-meme-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/ai-meme-md.png 768w"></figure>
 <h1>How to install</h1>
 <p>The installation process is quite simple. All you need to do is follow the instructions on the website and download the application. Once the application is installed, you can open a terminal and type the command.</p>
 <pre>ollama</pre>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/ollama.png" alt="ollama cmd output" width="1114" height="776" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/ollama-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/ollama-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/ollama-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/ollama.png" alt="ollama cmd output" width="1114" height="776" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/ollama-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/ollama-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/ollama-md.png 768w"></figure>
 <h2>Install a model</h2>
 <p>If you want to install your first model, I recommend picking <code>llama2</code> and trying the following command:</p>
 <pre>ollama run llama2</pre>
 <p>Once the model is downloaded (around 4GB), you can use the same command to use it. And remember, you don't need internet access to use that AI!</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/adrien-llama2.png" alt="Aked who I am" width="2746" height="136" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/adrien-llama2-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/adrien-llama2-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/adrien-llama2-md.png 768w"></figure>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/8k1yxh.jpg" alt="Just a silly meme" width="1400" height="350" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/8k1yxh-xs.jpg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/8k1yxh-sm.jpg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/8k1yxh-md.jpg 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/adrien-llama2.png" alt="Aked who I am" width="2746" height="136" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/adrien-llama2-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/adrien-llama2-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/adrien-llama2-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/8k1yxh.jpg" alt="Just a silly meme" width="1400" height="350" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/8k1yxh-xs.jpg 300w ,https://alrikrr.github.io/media/posts/37/responsive/8k1yxh-sm.jpg 480w ,https://alrikrr.github.io/media/posts/37/responsive/8k1yxh-md.jpg 768w"></figure>
 <p>Well obviously, like most of the LLMs, double-check the information it is going to send you! :D If you have any doubts or uncertainties, it's always a good idea to verify the accuracy of the information using multiple sources.</p>
 <h2>Delete a model</h2>
 <p>Let's say you run out of storage space ( Its a Macbook user issue here ... ) Well, you'll probably need to delete all the models you downloaded from your local machine. Here is the command to list all your models:</p>
 <pre>ollama list</pre>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/list.png" alt="ollama list command" width="1080" height="214" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/list-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/list-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/list-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/list.png" alt="ollama list command" width="1080" height="214" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/list-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/list-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/list-md.png 768w"></figure>
 <p>Then delete them using this command: </p>
 <pre>ollama rm &lt;MODEL&gt;</pre>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/rm.png" alt="" width="1122" height="368" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/rm-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/rm-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/rm-md.png 768w"></figure>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/8k2a1y.gif" alt="" width="260" height="260"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/rm.png" alt="" width="1122" height="368" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/rm-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/rm-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/rm-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/8k2a1y.gif" alt="" width="260" height="260"></figure>
 <h1>Extra MacOS - Shortcut </h1>
 <p>Since I am an Apple user, the usage of a black terminal can hurt the sensibility of my fellow Apple comrade. So I built an easy and working Apple Shortcut, so you don't have to open a CMD every time you want to use Ollama.</p>
 <p>By the way, I am not a shortcut expert, so do not hesitate if you have a better one in your pocket; I would love to use it! :D</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/shortcut.png" alt="shortcut schematics" width="1242" height="846" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/shortcut-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/shortcut-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/shortcut-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/shortcut.png" alt="shortcut schematics" width="1242" height="846" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/shortcut-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/shortcut-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/shortcut-md.png 768w"></figure>
 <p>This shortcut will ask you a prompt, then give you the result in another alert box.</p>
 <p>If you need to switch models frequently, I can share another shortcut with you. This time, it includes a list that you may need to edit in order to have the right models inside.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/short.png" alt="Shortcut multi models" width="1232" height="1134" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/short-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/short-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/responsive/short-md.png 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/short.png" alt="Shortcut multi models" width="1232" height="1134" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/37/responsive/short-xs.png 300w ,https://alrikrr.github.io/media/posts/37/responsive/short-sm.png 480w ,https://alrikrr.github.io/media/posts/37/responsive/short-md.png 768w"></figure>
 <p>Like the other one but this time you'll need to choose which model you are using from the prompt, quite fancy isn't it ?</p>
 <h1>Extra - WebUI</h1>
 <p>If you want something spicy, here is a Web UI for a more "ChatGPT immersion" where you can upload images, manage your session, keep a history... well, like the real ChatGPT website actually!</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/37/demo.gif" alt="" width="1920" height="1080"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/37/demo.gif" alt="" width="1920" height="1080"></figure>
 <p>You can check the github documentation for a simple install using docker:</p>
 <p><a href="https://github.com/open-webui/open-webui/tree/main">https://github.com/open-webui/open-webui/tree/main</a> </p>
 <p>On my side, I'm going to try that one very soon and will probably update this post or create a new one regarding the installation of the Web UI. Stay in touch!</p>
@@ -89,29 +89,29 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/incyber-forum-international-cyber-2023/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/incyber-forum-international-cyber-2023/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/36/update-banner-new.png" medium="image" />
+        <link href="https://alrikrr.github.io/incyber-forum-international-cyber-2023/"/>
+        <id>https://alrikrr.github.io/incyber-forum-international-cyber-2023/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/36/update-banner-new.png" medium="image" />
             <category term="Updates"/>
             <category term="Talks"/>
 
         <updated>2023-12-16T10:13:00-05:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/36/update-banner-new.png" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/36/update-banner-new.png" alt="" />
                     Yes, I know this post is coming a bit late, but I had to get it out anyway. I had&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/36/update-banner-new.png" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/36/update-banner-new.png" class="type:primaryImage" alt="" /></p>
                 
   <p>
     Yes, I know this post is coming a bit late, but I had to get it out anyway.
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/bn.jpeg" height="378" width="1026" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/bn-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/bn-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/bn-md.jpeg 768w">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/36/bn.jpeg" height="378" width="1026" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/36/responsive/bn-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/36/responsive/bn-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/36/responsive/bn-md.jpeg 768w">
       
     </figure>
 
@@ -124,7 +124,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/bn_link-2.jpeg" height="350" width="1400" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/bn_link-2-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/bn_link-2-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/bn_link-2-md.jpeg 768w">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/36/bn_link-2.jpeg" height="350" width="1400" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/36/responsive/bn_link-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/36/responsive/bn_link-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/36/responsive/bn_link-2-md.jpeg 768w">
       
     </figure>
 
@@ -166,7 +166,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/fine-2.jpeg" height="1024" width="887" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/fine-2-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/fine-2-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/36/responsive/fine-2-md.jpeg 768w">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/36/fine-2.jpeg" height="1024" width="887" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/36/responsive/fine-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/36/responsive/fine-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/36/responsive/fine-2-md.jpeg 768w">
       
     </figure>
 
@@ -200,28 +200,28 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/1-gba-sp-battery-change/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/1-gba-sp-battery-change/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/35/Retro-Gaming2.png" medium="image" />
+        <link href="https://alrikrr.github.io/1-gba-sp-battery-change/"/>
+        <id>https://alrikrr.github.io/1-gba-sp-battery-change/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/35/Retro-Gaming2.png" medium="image" />
             <category term="Retro Modding"/>
 
         <updated>2023-10-01T13:53:41-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/35/Retro-Gaming2.png" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/35/Retro-Gaming2.png" alt="" />
                     Hello, everyone! I hope you're doing well? Today, I'm bringing you a series of articles that will gradually appear on&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/35/Retro-Gaming2.png" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/35/Retro-Gaming2.png" class="type:primaryImage" alt="" /></p>
                 
   <p>
     Hello, everyone! I hope you're doing well?<br><br>Today, I'm bringing you a series of articles that will gradually appear on my blog. These articles will revolve around the modification of my Gameboy Advance SP, which I recently rediscovered among my belongings! This little gem is now 20 years old and still works fairly well, with not too much damage.<br>
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/gba-1.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-1-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-1-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-1-md.jpeg 768w">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/35/gba-1.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/35/responsive/gba-1-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-1-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-1-md.jpeg 768w">
       
     </figure>
 
@@ -242,7 +242,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/gba-2.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-2-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-2-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-2-md.jpeg 768w">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/35/gba-2.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/35/responsive/gba-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-2-md.jpeg 768w">
       
     </figure>
 
@@ -259,7 +259,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/gba-3.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-3-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-3-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-3-md.jpeg 768w">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/35/gba-3.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/35/responsive/gba-3-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-3-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-3-md.jpeg 768w">
       
     </figure>
 
@@ -268,7 +268,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/gba-4.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-4-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-4-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/35/responsive/gba-4-md.jpeg 768w">
+      <img loading="lazy" src="https://alrikrr.github.io/media/posts/35/gba-4.jpeg" height="2048" width="1536" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/35/responsive/gba-4-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/35/responsive/gba-4-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/35/responsive/gba-4-md.jpeg 768w">
       
     </figure>
 
@@ -283,40 +283,40 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/invalide-device-flipperzero-repair/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/invalide-device-flipperzero-repair/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/34/FlipperZero.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/invalide-device-flipperzero-repair/"/>
+        <id>https://alrikrr.github.io/invalide-device-flipperzero-repair/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/34/FlipperZero.jpg" medium="image" />
             <category term="FlipperZero"/>
 
         <updated>2023-09-15T10:14:31-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/34/FlipperZero.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/34/FlipperZero.jpg" alt="" />
                     If, like me, you enjoy playing with your flipper and happen to install a somewhat unstable custom firmware, you might&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/34/FlipperZero.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/34/FlipperZero.jpg" class="type:primaryImage" alt="" /></p>
                 <p>If, like me, you enjoy playing with your flipper and happen to install a somewhat unstable custom firmware, you might find yourself faced with this error message on your qFlipper Application. It becomes impossible to update your firmware, whether through the qFlipper GUI or the web interface!<br><br>No need to panic—I have a solution! Well, there's probably a simpler way to do it, but this one works! 😄</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//invalide.png" alt="" width="1724" height="1064" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/invalide-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/invalide-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/invalide-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34//invalide.png" alt="" width="1724" height="1064" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34//responsive/invalide-xs.png 300w ,https://alrikrr.github.io/media/posts/34//responsive/invalide-sm.png 480w ,https://alrikrr.github.io/media/posts/34//responsive/invalide-md.png 768w"></figure>
 <h2>Turn on DFU mode</h2>
 <p>First you'll need to turn your flipper into DFU mode by doing this steps from the official Flipper Wiki, here is the link:</p>
 <p>- <a href="https://docs.flipper.net/basics/firmware-update/firmware-recovery#2vuS0">https://docs.flipper.net/basics/firmware-update/firmware-recovery#2vuS0</a> </p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/dfu.png" alt="" width="2556" height="936" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/responsive/dfu-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/responsive/dfu-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/responsive/dfu-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34/dfu.png" alt="" width="2556" height="936" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34/responsive/dfu-xs.png 300w ,https://alrikrr.github.io/media/posts/34/responsive/dfu-sm.png 480w ,https://alrikrr.github.io/media/posts/34/responsive/dfu-md.png 768w"></figure>
 <h2>Clone and build</h2>
 <p>Once your friend is in DFU, you'll need to dowload the firmware source and build everything, here are my linux commands:</p>
 <p><code>git clone <a href="https://github.com/flipperdevices/flipperzero-firmware.git">https://github.com/flipperdevices/flipperzero-firmware.git</a></code><br><code>cd flipperzero-firmware</code><br><code>./ftb</code></p>
 <p>Just wait a few minutes and you should see this screen, note were the firmware is stored, you'll need that for later</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//build-new-firmware.png" alt="" width="880" height="444" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/build-new-firmware-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/build-new-firmware-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/build-new-firmware-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34//build-new-firmware.png" alt="" width="880" height="444" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34//responsive/build-new-firmware-xs.png 300w ,https://alrikrr.github.io/media/posts/34//responsive/build-new-firmware-sm.png 480w ,https://alrikrr.github.io/media/posts/34//responsive/build-new-firmware-md.png 768w"></figure>
 <h2>Setup Rules</h2>
 <p>Next step is to update the qFlipper Rules, download the github repo and execute the script</p>
 <pre>git clone <a href="https://github.com/flipperdevices/qFlipper.git">https://github.com/flipperdevices/qFlipper.git</a><br><br>cd qFlipper<br><br>chmod +x setup_rules.sh<br><br>./setup_rules.sh</pre>
 <h2>Install from file</h2>
 <p>Now you can restart your qFlipper application and select the firmware file like below</p>
-<figure class="post__image post__image--full"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//install-from-files.png" alt="" width="1847" height="724" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/install-from-files-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/install-from-files-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34//responsive/install-from-files-md.png 768w"></figure>
+<figure class="post__image post__image--full"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34//install-from-files.png" alt="" width="1847" height="724" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34//responsive/install-from-files-xs.png 300w ,https://alrikrr.github.io/media/posts/34//responsive/install-from-files-sm.png 480w ,https://alrikrr.github.io/media/posts/34//responsive/install-from-files-md.png 768w"></figure>
 <p>Just wait a bit until your Flipper is fully updated, then upgrade it again using the qFlipper app by pressing the Green Button !</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/Screenshot-20230915-104512.png" alt="" width="512" height="256" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/responsive/Screenshot-20230915-104512-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/responsive/Screenshot-20230915-104512-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/34/responsive/Screenshot-20230915-104512-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/34/Screenshot-20230915-104512.png" alt="" width="512" height="256" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/34/responsive/Screenshot-20230915-104512-xs.png 300w ,https://alrikrr.github.io/media/posts/34/responsive/Screenshot-20230915-104512-sm.png 480w ,https://alrikrr.github.io/media/posts/34/responsive/Screenshot-20230915-104512-md.png 768w"></figure>
 <p>Enjoy !</p>
 <p> </p>
             ]]>
@@ -327,25 +327,25 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/blog-issue/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/blog-issue/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/33/Issue-Banner.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/blog-issue/"/>
+        <id>https://alrikrr.github.io/blog-issue/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/33/Issue-Banner.jpg" medium="image" />
             <category term="Updates"/>
 
         <updated>2023-09-13T18:45:03-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/33/Issue-Banner.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/33/Issue-Banner.jpg" alt="" />
                     Hi There ! Just to let you know that most of the pictures from the articles on my website are&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/33/Issue-Banner.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/33/Issue-Banner.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Hi There !</p>
 <p>Just to let you know that most of the pictures from the articles on my  website are broken at the moment !</p>
 <p>I'll try to fix that soon! Sorry for any inconvenience caused.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/33/7z21s3.gif" alt="" width="260" height="326"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/33/7z21s3.gif" alt="" width="260" height="326"></figure>
             ]]>
         </content>
     </entry>
@@ -354,21 +354,21 @@
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/thinkpad-t470-fingerprint-working-linux/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/thinkpad-t470-fingerprint-working-linux/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/32/linux-banner.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/thinkpad-t470-fingerprint-working-linux/"/>
+        <id>https://alrikrr.github.io/thinkpad-t470-fingerprint-working-linux/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/32/linux-banner.jpg" medium="image" />
             <category term="Linux"/>
 
         <updated>2023-09-12T17:21:38-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/32/linux-banner.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/32/linux-banner.jpg" alt="" />
                     Hello everyone, today's tutorial can be helpful for those who struggle with using and getting the fingerprint device to work&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/32/linux-banner.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/32/linux-banner.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Hello everyone, today's tutorial can be helpful for those who struggle with using and getting the fingerprint device to work on their Thinkpad when running a Linux system!<br><br>On my end, I'm using a<strong> Thinkpad T470 </strong>with a brand new SSD, and I've got <strong>PopOs</strong> installed – it's running like a charm!</p>
 <p>Most of the commands can be found using the python-validity github repo right there</p>
 <ul>
@@ -383,18 +383,18 @@ $ sudo apt install open-fprintd fprintd-clients python3-validity
 $ fprintd-enroll</code></pre>
 <h1>Enroll new fingerprint</h1>
 <p>Now if you don´t have any error, you should be able to register your fingerprint using the command <code>fprintd-enroll</code> and press your finger to the fingerprint device multiple times until you get the message <code>Enroll result: enroll-completed</code></p>
-<figure class="post__image"><code></code><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/fprintd-enroll.png" alt="Enroll-Print" width="526" height="279" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/fprintd-enroll-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/fprintd-enroll-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/fprintd-enroll-md.png 768w"></figure>
+<figure class="post__image"><code></code><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/fprintd-enroll.png" alt="Enroll-Print" width="526" height="279" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/fprintd-enroll-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/fprintd-enroll-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/fprintd-enroll-md.png 768w"></figure>
 <h2>Error list_devices failed:</h2>
 <p>Now, if, like me, it doesn't work the first time, well, that's okay – nobody's perfect</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/error-enroll.png" alt="" width="313" height="53" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/error-enroll-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/error-enroll-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/error-enroll-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/error-enroll.png" alt="" width="313" height="53" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/error-enroll-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/error-enroll-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/error-enroll-md.png 768w"></figure>
 <p>If you check your python3-validity.service it should show you an error</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/error-systemctl.png" alt="" width="1510" height="414" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/error-systemctl-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/error-systemctl-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/error-systemctl-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/error-systemctl.png" alt="" width="1510" height="414" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/error-systemctl-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/error-systemctl-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/error-systemctl-md.png 768w"></figure>
 <p>You just need to do a factory reset of your fingerprint device using the command below</p>
 <p><code></code></p>
 <pre class="notranslate"><code>$ sudo systemctl stop python3-validity
 $ sudo validity-sensors-firmware
 $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pre>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/factory-reset.png" alt="" width="1200" height="450" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/factory-reset-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/factory-reset-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/factory-reset-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/factory-reset.png" alt="" width="1200" height="450" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/factory-reset-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/factory-reset-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/factory-reset-md.png 768w"></figure>
 <p>Now you should be able to start the python3-validy.service and enrolling your new fingerprint !</p>
 <h1>PAM enable</h1>
 <p>Before doing anything else, you want to enable the dinger-print device to unlock your session or using your finger to run a sudo command !</p>
@@ -402,7 +402,7 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
 <pre class="notranslate"><code>$ sudo pam-auth-update
 </code></pre>
-<div class="zeroclipboard-container position-absolute right-0 top-0"><figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/pam-update.png" alt="" width="1883" height="526" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/pam-update-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/pam-update-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/32/responsive/pam-update-md.png 768w"></figure></div>
+<div class="zeroclipboard-container position-absolute right-0 top-0"><figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/32/pam-update.png" alt="" width="1883" height="526" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/32/responsive/pam-update-xs.png 300w ,https://alrikrr.github.io/media/posts/32/responsive/pam-update-sm.png 480w ,https://alrikrr.github.io/media/posts/32/responsive/pam-update-md.png 768w"></figure></div>
 </div>
 <p>Here are the first lines of my <code>/etc/pam.d/common-auth</code> file</p>
 <pre>auth    [success=2 default=ignore]    pam_fprintd.so max_tries=1 timeout=10 # debug<br>auth    [success=1 default=ignore]    pam_unix.so try_first_pass nullok_secure</pre>
@@ -416,21 +416,21 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/my-pnpt-feedback/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/my-pnpt-feedback/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/2/my-cert.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/my-pnpt-feedback/"/>
+        <id>https://alrikrr.github.io/my-pnpt-feedback/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/2/my-cert.jpg" medium="image" />
             <category term="Updates"/>
 
         <updated>2023-08-15T18:53:27-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/2/my-cert.jpg" alt="My PNPT Feedback" />
+                        <img src="https://alrikrr.github.io/media/posts/2/my-cert.jpg" alt="My PNPT Feedback" />
                     Hi! Today I’m going to share with you my feedback on the PNPT certification that I passed at the beginning&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/2/my-cert.jpg" class="type:primaryImage" alt="My PNPT Feedback" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/2/my-cert.jpg" class="type:primaryImage" alt="My PNPT Feedback" /></p>
                 <p>Hi! Today I’m going to share with you my feedback on the PNPT certification that I passed at the beginning of August 2023 by reviewing the before and during the exam!</p>
 <hr>
 <div class="post__toc">
@@ -451,7 +451,7 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 </div>
 <h1 id="my-knowledge">My Background</h1>
 <p>Before we dive deeper, let me clarify my experience since I see few people talking about their skills before starting the examination. I have 4 years of experience in the field of computer security, with 2 actual years spent as a Pentester. I frequently practice at home, as well as during missions conducting intrusion tests on both internal and external client environments. Moreover, report writing is no longer a mysterious art for me. So, I’m embarking on this certification with a significant advantage compared to someone new to this field. 🛡️</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/pnpt-2.jpeg" alt="" width="468" height="297" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/pnpt-2-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/pnpt-2-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/pnpt-2-md.jpeg 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/pnpt-2.jpeg" alt="" width="468" height="297" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/2/responsive/pnpt-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/2/responsive/pnpt-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/2/responsive/pnpt-2-md.jpeg 768w"></figure>
 <h1 id="mcetoc_1h7tmfdnggn">PNPT &amp; Package Course</h1>
 <p>Before purchasing the PNPT courses and voucher, it’s essential to note that the two exam vouchers do not have an expiration date. The courses are available on the Academic TCM-Security platform, and you’ll be provided with five courses, along with their completion percentages, to give you an idea of what I’ve gone through so far:</p>
 <ul>
@@ -484,7 +484,7 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <h2 id="mcetoc_1h7tmfdnggr">My Exam</h2>
 <p>As for me, I faced a few challenges during the enumeration phase. I won’t say more to avoid spoiling anything! The attacks weren’t overly difficult; they’re entirely manageable even for beginners if you follow the courses provided by TCM.</p>
 <p>Still, it’s a lab exam that somewhat mirrors reality, even though everything is designed to give you hints about where to look and what to do without causing too many issues.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/meme-0.jpg" alt="Private PNPT joke" width="369" height="298" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-0-xs.jpg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-0-sm.jpg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-0-md.jpg 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/meme-0.jpg" alt="Private PNPT joke" width="369" height="298" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/2/responsive/meme-0-xs.jpg 300w ,https://alrikrr.github.io/media/posts/2/responsive/meme-0-sm.jpg 480w ,https://alrikrr.github.io/media/posts/2/responsive/meme-0-md.jpg 768w"></figure>
 <h1 id="mcetoc_1h7tmfdnggs">Report Period - 2 days</h1>
 <p>When it comes to the report writing phase, it’s also nothing overly complicated. I can only advise you to capture screenshots BEFORE your exam period ends!</p>
 <p>As for what I did, I took notes on the vulnerabilities I discovered and how to exploit them. It’s important to provide Proof of Concepts (PoCs) but also suggestions for fixing them. Remember, this report is intended for a client, so write it accordingly. Include both the technical and executive aspects.</p>
@@ -501,12 +501,12 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <li>Attack Paths</li>
 <li>Technical Details (Vulnerability Details and PoCs)</li>
 </ul>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/meme-1.jpeg" alt="" width="517" height="499" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-1-xs.jpeg 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-1-sm.jpeg 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/responsive/meme-1-md.jpeg 768w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/meme-1.jpeg" alt="" width="517" height="499" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/2/responsive/meme-1-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/2/responsive/meme-1-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/2/responsive/meme-1-md.jpeg 768w"></figure>
 <h1 id="mcetoc_1h7tmfdnggt">Final Presentation</h1>
 <p>Aside from the technical hiccups at the beginning of the presentation (well, you can’t really hide the chaos, can you…), it was quite swift – no more than 15 minutes – with a few questions from the examiner. On my end, I jumped right into presenting the English PDF report (with my French Baguette accent).</p>
 <p>The atmosphere was friendly, with no pressure as long as you’re confident in your subject! The advantage is that the examiner will give you the final verdict right away, letting you know if you’ve earned your certification or not.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/pnpt-3.gif" alt="" width="360" height="225"></figure>
-<figure class="post__image post__image--center"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/2/pnpt-4.gif" alt="" width="360" height="202"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/pnpt-3.gif" alt="" width="360" height="225"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/2/pnpt-4.gif" alt="" width="360" height="202"></figure>
 <div id="post-content" class="post-content">
 <p>It’s still a great experience with TCM-Security. If you have any questions, I can answer them without revealing the exam’s content. As for me, I’m leaning towards the next certification in Malware Analysis, PJMR!</p>
 </div>
@@ -519,38 +519,38 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/9-nsec21-toms-hut-part2/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/9-nsec21-toms-hut-part2/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/25/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/9-nsec21-toms-hut-part2/"/>
+        <id>https://alrikrr.github.io/9-nsec21-toms-hut-part2/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/25/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-04-08T21:53:00-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/25/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/25/nsec-Badge.jpg" alt="" />
                     If you want to fully understand this post I can only recommand you to read the previous one (Flag 8&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/25/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/25/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>If you want to fully understand this post I can only recommand you to read the previous one (Flag 8 part1)</p>
 <h1 id="re102-reverse">RE102 Reverse</h1>
 <p>Like the previous one, the architecture is Xtensa, but this time I already have the right module for Ghidra !</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/xtensa_elf.png" alt="" width="1351" height="253" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/xtensa_elf-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/xtensa_elf-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/xtensa_elf-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/25/xtensa_elf.png" alt="" width="1351" height="253" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/25/responsive/xtensa_elf-xs.png 300w ,https://alrikrr.github.io/media/posts/25/responsive/xtensa_elf-sm.png 480w ,https://alrikrr.github.io/media/posts/25/responsive/xtensa_elf-md.png 768w"></figure>
 <p>Using Ghidra I’m doing the import and the analysis of the binary.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/ghidra_import.png" alt="" width="544" height="315" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/ghidra_import-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/ghidra_import-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/ghidra_import-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/25/ghidra_import.png" alt="" width="544" height="315" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/25/responsive/ghidra_import-xs.png 300w ,https://alrikrr.github.io/media/posts/25/responsive/ghidra_import-sm.png 480w ,https://alrikrr.github.io/media/posts/25/responsive/ghidra_import-md.png 768w"></figure>
 <h1 id="app-main">App Main</h1>
 <p>The <code>app_main</code> function is very similar to <code>RE101</code>, so this time let’s jump on the <code>verify</code> function !</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/app_main-2.png" alt="" width="925" height="529" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/app_main-2-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/app_main-2-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/app_main-2-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/25/app_main-2.png" alt="" width="925" height="529" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/25/responsive/app_main-2-xs.png 300w ,https://alrikrr.github.io/media/posts/25/responsive/app_main-2-sm.png 480w ,https://alrikrr.github.io/media/posts/25/responsive/app_main-2-md.png 768w"></figure>
 <h2 id="verify">Verify</h2>
 <p>This time its different, as we can see the user input is stored inside <code>user_code</code> and the check is done using <code>a8</code> registry.<br>In the first example, the first element of the input is checked with <code>0x66</code> which is a <code>f</code>.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/verify_stuff.png" alt="" width="802" height="418" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/verify_stuff-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/verify_stuff-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/verify_stuff-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/25/verify_stuff.png" alt="" width="802" height="418" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/25/responsive/verify_stuff-xs.png 300w ,https://alrikrr.github.io/media/posts/25/responsive/verify_stuff-sm.png 480w ,https://alrikrr.github.io/media/posts/25/responsive/verify_stuff-md.png 768w"></figure>
 <p>We just need to jump into each function and check which element is checked and with which character.</p>
 <h1 id="flag">Flag</h1>
 <p>The final FLAG is<code>f219e6cdb1fa4a48b160d00d61118f93</code></p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/flag.png" alt="" width="687" height="127" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/flag-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/flag-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/25/responsive/flag-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/25/flag.png" alt="" width="687" height="127" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/25/responsive/flag-xs.png 300w ,https://alrikrr.github.io/media/posts/25/responsive/flag-sm.png 480w ,https://alrikrr.github.io/media/posts/25/responsive/flag-md.png 768w"></figure>
             ]]>
         </content>
     </entry>
@@ -559,34 +559,34 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/8-nsec21-toms-hut-part1/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/8-nsec21-toms-hut-part1/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/24/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/8-nsec21-toms-hut-part1/"/>
+        <id>https://alrikrr.github.io/8-nsec21-toms-hut-part1/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/24/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-04-07T21:52:00-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/24/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/24/nsec-Badge.jpg" alt="" />
                     The next 2 Flags are binary reverse, I was very very rusty on this one … So, this challenge is&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/24/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/24/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>The next 2 Flags are binary reverse, I was very very rusty on this one …</p>
 <h1 id="wi-fi-join">Wi-Fi Join</h1>
 <p>So, this challenge is accessible from Tom’s Hut after you have joined a Wi-Fi network !</p>
 <p>To join a Wi-Fi network, you need to access the serial port using <code>screen</code> (check Chall 7 !) and use the following command:</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/wifi-connect.png" alt="" width="1009" height="149" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/wifi-connect-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/wifi-connect-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/wifi-connect-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/wifi-connect.png" alt="" width="1009" height="149" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/wifi-connect-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/wifi-connect-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/wifi-connect-md.png 768w"></figure>
 <p>You should receive an IP, you can now go to Tom’s Hut and see the following message !</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/Screenshot-from-2023-04-20-16-30-56.png" alt="" width="941" height="837" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/Screenshot-from-2023-04-20-16-30-56.png" alt="" width="941" height="837" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/Screenshot-from-2023-04-20-16-30-56-md.png 768w"></figure>
 <p>Download both of the binaries, RE101 and RE102.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/download-re-2.png" alt="" width="392" height="171" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/download-re-2-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/download-re-2-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/download-re-2-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/download-re-2.png" alt="" width="392" height="171" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/download-re-2-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/download-re-2-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/download-re-2-md.png 768w"></figure>
 <h1 id="re101---reverse">RE101 - Reverse</h1>
 <p>The first binary named <code>re101.elf</code> is a binary using Xtensa architecture.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/re101-elf.png" alt="" width="1352" height="88" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/re101-elf-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/re101-elf-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/re101-elf-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/re101-elf.png" alt="" width="1352" height="88" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/re101-elf-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/re101-elf-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/re101-elf-md.png 768w"></figure>
 <h2 id="xtensa-processor">Xtensa Processor</h2>
 <p>I can´t execute it on my machine so I’ll use Ghidra to dissas and take a look inside.</p>
 <p>Unfortunately Ghidra can’t understand Xtensa binaries by default, so I need to add an extra Processor, here is the github link</p>
@@ -594,18 +594,18 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <li><a href="https://github.com/yath/ghidra-xtensa">Xtensa Arch - Github</a></li>
 </ul>
 <p>The install is explained inside the README.md but becarefull to gve your user the full ownership of the xtensa folder.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/ghidra-xtensa.png" alt="" width="580" height="346" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/ghidra-xtensa-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/ghidra-xtensa-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/ghidra-xtensa-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/ghidra-xtensa.png" alt="" width="580" height="346" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/ghidra-xtensa-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/ghidra-xtensa-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/ghidra-xtensa-md.png 768w"></figure>
 <p>Now the binary is recognized, we can analyse it and reverse it !</p>
 <h2 id="main-function">Main function</h2>
 <p>The main function is easly located in the ghidra function folder.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/main_func.png" alt="" width="1231" height="410" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/main_func-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/main_func-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/main_func-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/main_func.png" alt="" width="1231" height="410" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/main_func-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/main_func-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/main_func-md.png 768w"></figure>
 <p>As we can see, this function accept a user input and then check this input with <code>verify</code> function. Depending of the user input, the <code>verify</code>function will display the flag or not.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/main_fun_full.png" alt="" width="869" height="467" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/main_fun_full-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/main_fun_full-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/main_fun_full-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/main_fun_full.png" alt="" width="869" height="467" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/main_fun_full-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/main_fun_full-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/main_fun_full-md.png 768w"></figure>
 <h2 id="verify-">Verify !</h2>
 <p>The main function won´t give us more information so let’s dig into <code>verify</code>function !</p>
 <p>This one is a bit tricky but after half an hour, I sort of understand how it works.</p>
 <p>So, the user input in <code>a1</code> is checked characters by charaters but not in the right order.<br>The characters that are compared are stored inside <code>a3</code>, <code>a8</code> etc. and the value of these registers are changing during the execution of the binary.</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/verify_code.png" alt="" width="550" height="765" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/verify_code-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/verify_code-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/verify_code-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/verify_code.png" alt="" width="550" height="765" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/verify_code-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/verify_code-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/verify_code-md.png 768w"></figure>
 <p>I was a bit lazy on this one and used a notepad to check characters by characters the user input and then found the FLAG.</p>
 <p>Here is the correct order for each check.</p>
 <p>So you have the value <code>a</code> something with the affected value using <code>movi</code>. Then the <code>Stack</code> whith the position of the letter checked inside the user input and it’s value.</p>
@@ -665,7 +665,7 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 <li>Flag = <code>11a922186c46496eb1317c128b361720</code></li>
 </ul>
 <p>We can validate the challenge using the CLI on the badge</p>
-<figure class="post__image"><img loading="lazy"  src="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/validate.png" alt="" width="685" height="123" sizes="(max-width: 48em) 100vw, 768px" srcset="file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/validate-xs.png 300w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/validate-sm.png 480w ,file:///C:/Users/Adrien/Documents/Publii/sites/alrikrrs-blog/preview/media/posts/24/responsive/validate-md.png 768w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/validate.png" alt="" width="685" height="123" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/validate-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/validate-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/validate-md.png 768w"></figure>
             ]]>
         </content>
     </entry>
@@ -674,22 +674,22 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
         <author>
             <name>AlrikRr</name>
         </author>
-        <link href="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/7-nsec21-reboot/index.html"/>
-        <id>file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/7-nsec21-reboot/index.html</id>
-        <media:content url="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/23/nsec-Badge.jpg" medium="image" />
+        <link href="https://alrikrr.github.io/7-nsec21-reboot/"/>
+        <id>https://alrikrr.github.io/7-nsec21-reboot/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" medium="image" />
             <category term="Write Up"/>
             <category term="BadgeLife"/>
 
         <updated>2023-04-07T21:49:00-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/23/nsec-Badge.jpg" alt="" />
+                        <img src="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" alt="" />
                     I was also lucky on this one. After connecting to the device using the serial port with the screen command:&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="file:///C:\Users\Adrien\Documents\Publii\sites\alrikrrs-blog\preview/media/posts/23/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
                 <p>I was also lucky on this one.</p>
 <h1 id="tty-cli">tty CLI</h1>
 <p>After connecting to the device using the serial port with the screen command:</p>

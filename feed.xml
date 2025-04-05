@@ -3,7 +3,7 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2025-04-05T09:45:54-04:00</updated>
+    <updated>2025-04-05T09:47:42-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
@@ -16,16 +16,19 @@
         </author>
         <link href="https://alrikrr.github.io/northsec-2024-speaker/"/>
         <id>https://alrikrr.github.io/northsec-2024-speaker/</id>
+        <media:content url="https://alrikrr.github.io/media/posts/41/talk-northsec.jpg" medium="image" />
             <category term="Talks"/>
 
         <updated>2024-06-22T17:46:49-04:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://alrikrr.github.io/media/posts/41/talk-northsec.jpg" alt="" />
                     Okay, so let's write some articles again, right ? I'll try to post some old ones i never published, here&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://alrikrr.github.io/media/posts/41/talk-northsec.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Okay, so let's write some articles again, right ?<br>I'll try to post some old ones i never published, here we go with my talk at NorthSec 2024 !</p>
 <hr>
 <p>Hi there, its been a while ! Today I'll share with you folks my experience at NorthSec 2024. I love this event in many aspects. For this year i was a speaker for the first time and also a volunteer for the 2nd one !</p>

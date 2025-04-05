@@ -15,6 +15,7 @@
             "title": "NorthSec 2024 - Speaker",
             "summary": "Okay, so let's write some articles again, right ? I'll try to post some old ones i never published, here&hellip;",
             "content_html": "<p>Okay, so let's write some articles again, right ?<br>I'll try to post some old ones i never published, here we go with my talk at NorthSec 2024 !</p>\n<hr>\n<p>Hi there, its been a while ! Today I'll share with you folks my experience at NorthSec 2024. I love this event in many aspects. For this year i was a speaker for the first time and also a volunteer for the 2nd one !</p>\n<h1>Speaker Experience </h1>\n<p>Like I said, it was my first experience as a speaker for NorthSec and I really enjoyed it ! </p>\n<p>I submited my Call for paper on december 2023 and received the go on february 2024 ! All along I was guided by Hugo who helped me getting all the informations, dates and question I had in mind before the big day ! Lots of kudos for him :D</p>\n<figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://alrikrr.github.io/media/posts/41/Screenshot-2024-05-20-at-9.44.37-PM.png\" alt=\"My face on stage\" width=\"1568\" height=\"1242\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://alrikrr.github.io/media/posts/41/responsive/Screenshot-2024-05-20-at-9.44.37-PM-xs.png 300w ,https://alrikrr.github.io/media/posts/41/responsive/Screenshot-2024-05-20-at-9.44.37-PM-sm.png 480w ,https://alrikrr.github.io/media/posts/41/responsive/Screenshot-2024-05-20-at-9.44.37-PM-md.png 768w\"></figure>\n<p>My talk was about<strong> Hardware Hacking curiosity</strong>, kind of the same I did for InCyber2023 (You can check <a href=\"https://alrikrr.github.io/incyber-forum-international-cyber-2023/\" target=\"_blank\" rel=\"noopener noreferrer\">My previous post</a> if you missed it :D ) but this time I presented the hacking journey of a connected Wi-Fi camera instead of a Wi-Fi router.</p>\n<p>If you missed this talk, you can check it on NorthSec Youtube channel ( starting at 1:51:51) </p>\n<ul>\n<li>Here is the link : <a href=\"https://youtu.be/r30Ci3DNy5A?t=6713\" target=\"_blank\" rel=\"noopener noreferrer\">NorthSec 2024 - Salle de Bal - Day 1</a></li>\n</ul>\n<p>It was an amazing experience would recommand it 100% !</p>\n<p> </p>\n<p> </p>\n<p> </p>\n<p> </p>",
+            "image": "https://alrikrr.github.io/media/posts/41/talk-northsec.jpg",
             "author": {
                 "name": "AlrikRr"
             },
@@ -22,7 +23,7 @@
                    "Talks"
             ],
             "date_published": "2024-06-22T17:46:49-04:00",
-            "date_modified": "2025-04-05T09:45:54-04:00"
+            "date_modified": "2025-04-05T09:47:42-04:00"
         },
         {
             "id": "https://alrikrr.github.io/your-local-ai-chatgpt-like/",

@@ -3,12 +3,49 @@
     <title>AlrikRr&#x27;s Blog</title>
     <link href="https://alrikrr.github.io/feed.xml" rel="self" />
     <link href="https://alrikrr.github.io" />
-    <updated>2025-04-04T23:06:56-04:00</updated>
+    <updated>2025-04-05T09:45:54-04:00</updated>
     <author>
         <name>AlrikRr</name>
     </author>
     <id>https://alrikrr.github.io</id>
 
+    <entry>
+        <title>NorthSec 2024 - Speaker</title>
+        <author>
+            <name>AlrikRr</name>
+        </author>
+        <link href="https://alrikrr.github.io/northsec-2024-speaker/"/>
+        <id>https://alrikrr.github.io/northsec-2024-speaker/</id>
+            <category term="Talks"/>
+
+        <updated>2024-06-22T17:46:49-04:00</updated>
+            <summary>
+                <![CDATA[
+                    Okay, so let's write some articles again, right ? I'll try to post some old ones i never published, here&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Okay, so let's write some articles again, right ?<br>I'll try to post some old ones i never published, here we go with my talk at NorthSec 2024 !</p>
+<hr>
+<p>Hi there, its been a while ! Today I'll share with you folks my experience at NorthSec 2024. I love this event in many aspects. For this year i was a speaker for the first time and also a volunteer for the 2nd one !</p>
+<h1>Speaker Experience </h1>
+<p>Like I said, it was my first experience as a speaker for NorthSec and I really enjoyed it ! </p>
+<p>I submited my Call for paper on december 2023 and received the go on february 2024 ! All along I was guided by Hugo who helped me getting all the informations, dates and question I had in mind before the big day ! Lots of kudos for him :D</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/41/Screenshot-2024-05-20-at-9.44.37-PM.png" alt="My face on stage" width="1568" height="1242" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/41/responsive/Screenshot-2024-05-20-at-9.44.37-PM-xs.png 300w ,https://alrikrr.github.io/media/posts/41/responsive/Screenshot-2024-05-20-at-9.44.37-PM-sm.png 480w ,https://alrikrr.github.io/media/posts/41/responsive/Screenshot-2024-05-20-at-9.44.37-PM-md.png 768w"></figure>
+<p>My talk was about<strong> Hardware Hacking curiosity</strong>, kind of the same I did for InCyber2023 (You can check <a href="https://alrikrr.github.io/incyber-forum-international-cyber-2023/" target="_blank" rel="noopener noreferrer">My previous post</a> if you missed it :D ) but this time I presented the hacking journey of a connected Wi-Fi camera instead of a Wi-Fi router.</p>
+<p>If you missed this talk, you can check it on NorthSec Youtube channel ( starting at 1:51:51) </p>
+<ul>
+<li>Here is the link : <a href="https://youtu.be/r30Ci3DNy5A?t=6713" target="_blank" rel="noopener noreferrer">NorthSec 2024 - Salle de Bal - Day 1</a></li>
+</ul>
+<p>It was an amazing experience would recommand it 100% !</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Ollama: Your Private AI</title>
         <author>
@@ -129,7 +166,7 @@
     </figure>
 
   <p>
-    Thanks, Dorota, for the pictures! :D
+    Thanks, Dorota for the pictures! :D
   </p>
 
   <p>
@@ -157,25 +194,12 @@
     Unfortunately, the presentation wasn't recorded, but it won't be the last for those who&nbsp;like to attend.
   </p>
 
-    <h1 id="hacker-without-borders">
-      Hacker Without Borders
-    </h1>
-
-  <p>
-    I discovered the NGO Hacker Without Borders and spoke with their representatives. I applied in the evening, now I just have to wait for the North America chapter to open its doors to embark on the adventure!
-  </p>
-
-    <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://alrikrr.github.io/media/posts/36/fine-2.jpeg" height="1024" width="887" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/36/responsive/fine-2-xs.jpeg 300w ,https://alrikrr.github.io/media/posts/36/responsive/fine-2-sm.jpeg 480w ,https://alrikrr.github.io/media/posts/36/responsive/fine-2-md.jpeg 768w">
-      
-    </figure>
-
     <h1 id="thanks">
       Thanks !
     </h1>
 
   <p>
-    I would like to thank Vincent Rioux once again for the invitation to present this year! As I mentioned, it was my first presentation, and it was intense—the room was packed! Thank you to those who attended the presentation. It won't be the last; I have other topics in mind to share with you.
+    I would like to thank <b>Vincent Rioux</b> once again for the invitation to present this year! As I mentioned, it was my first presentation, and it was intense, the room was packed! Thank you to those who attended the presentation. It won't be the last; I have other topics in mind to share with you.
   </p>
 
     <h2 id="linkedin-related-posts">
@@ -666,50 +690,6 @@ $ sudo python3 /usr/share/python-validity/playground/factory-reset.py</code></pr
 </ul>
 <p>We can validate the challenge using the CLI on the badge</p>
 <figure class="post__image"><img loading="lazy"  src="https://alrikrr.github.io/media/posts/24/validate.png" alt="" width="685" height="123" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alrikrr.github.io/media/posts/24/responsive/validate-xs.png 300w ,https://alrikrr.github.io/media/posts/24/responsive/validate-sm.png 480w ,https://alrikrr.github.io/media/posts/24/responsive/validate-md.png 768w"></figure>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>#7 Nsec21 - Reboot</title>
-        <author>
-            <name>AlrikRr</name>
-        </author>
-        <link href="https://alrikrr.github.io/7-nsec21-reboot/"/>
-        <id>https://alrikrr.github.io/7-nsec21-reboot/</id>
-        <media:content url="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" medium="image" />
-            <category term="Write Up"/>
-            <category term="BadgeLife"/>
-
-        <updated>2023-04-07T21:49:00-04:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" alt="" />
-                    I was also lucky on this one. After connecting to the device using the serial port with the screen command:&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alrikrr.github.io/media/posts/23/nsec-Badge.jpg" class="type:primaryImage" alt="" /></p>
-                <p>I was also lucky on this one.</p>
-<h1 id="tty-cli">tty CLI</h1>
-<p>After connecting to the device using the serial port with the screen command:</p>
-<div class="highlight">
-<pre tabindex="0"><code class="language-bash hljs" data-lang="bash">sudo screen /dev/ttyUSB0 115200
-</code></pre>
-</div>
-<p>If you can´t see your ttyUSB, try using <code>dmesg</code> after connecting the badge on your computer.</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/7-flag/dmesg.png" alt="dmesg debug" data-is-external-image="true"></p>
-<p>And also check your <code>/dev/</code> folder</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/7-flag/ttyUSB0.png" alt="ttyUSB in dev" data-is-external-image="true"></p>
-<h1 id="reboot-">Reboot !</h1>
-<p>As you can see, behind the badge, there is a reboot button, and I keep pressing it by mistake!</p>
-<p>However, after looking at the terminal, I saw the full message and a small help menu before the shell!</p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/7-flag/tab-reboot.png" alt="Reboot menu" data-is-external-image="true"></p>
-<p>As you can see, I can use TAB to autocomplete commands. Maybe I need to found a hidden command which is not displayed with <code>help</code> command ?</p>
-<p>After pressing a few keys, I was able to discover the secret command <code>the_sword_of_azeroth!</code></p>
-<p><img loading="lazy" src="https://alrikrr.github.io/posts/write-up/nsec-2021/7-flag/letter-t.png" alt="Sword" data-is-external-image="true"></p>
-<h1 id="flag">Flag</h1>
-<p>Here is the 7th Flag : <code>FLAG-Cl1F0rFun&amp;Pr0f1t</code></p>
             ]]>
         </content>
     </entry>

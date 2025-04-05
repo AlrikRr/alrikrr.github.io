@@ -602,7 +602,7 @@
 </url>
 <url>
 <loc>https://alrikrr.github.io/incyber-forum-international-cyber-2023/</loc>
-<lastmod>2024-03-24T13:04:33-04:00</lastmod>
+<lastmod>2025-04-04T23:26:53-04:00</lastmod>
 <image:image>
 <image:loc>https://alrikrr.github.io/media/posts/36/update-banner-new.png</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -613,10 +613,6 @@
 </image:image>
 <image:image>
 <image:loc>https://alrikrr.github.io/media/posts/36/bn_link-2.jpeg</image:loc>
-<image:title><![CDATA[]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://alrikrr.github.io/media/posts/36/fine-2.jpeg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
@@ -793,6 +789,14 @@
 </image:image>
 </url>
 <url>
+<loc>https://alrikrr.github.io/northsec-2024-speaker/</loc>
+<lastmod>2025-04-05T09:45:54-04:00</lastmod>
+<image:image>
+<image:loc>https://alrikrr.github.io/media/posts/41/Screenshot-2024-05-20-at-9.44.37-PM.png</image:loc>
+<image:title><![CDATA[My face on stage]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://alrikrr.github.io/p4wnp1-install/</loc>
 <lastmod>2023-08-15T21:38:49-04:00</lastmod>
 <image:image>
@@ -835,6 +839,9 @@
 </url>
 <url>
 <loc>https://alrikrr.github.io/page/5/</loc>
+</url>
+<url>
+<loc>https://alrikrr.github.io/page/6/</loc>
 </url>
 <url>
 <loc>https://alrikrr.github.io/thinkpad-t470-fingerprint-working-linux/</loc>
